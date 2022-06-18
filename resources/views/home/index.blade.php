@@ -1,51 +1,10 @@
 @extends('home.layouts.app')
 
-@section('title', 'ShopGroup.vn Đơn Vị Mua Bán Chuyển Nhượng Group Facebook Uy Tín')
-@section('description', 'Bạn đang có nhu cầu mua bán Group Facebook chất lượng? ShopGroup.vn - đơn vị mua bán chuyển nhượng Group Facebook uy tín tại Việt Nam sẽ giúp bạn làm điều đó.')
+@section('title', 'ttbgroup.vn Đơn Vị Mua Bán Chuyển Nhượng Group Facebook Uy Tín')
+@section('description', 'Bạn đang có nhu cầu mua bán Group Facebook chất lượng? ttbgroup.vn - đơn vị mua bán chuyển nhượng Group Facebook uy tín tại Việt Nam sẽ giúp bạn làm điều đó.')
 @section('css')
 
-<style>
-    .mybox{
-        display: inline-block;
-        width: 28%;
-    }
-    .popup-btn {
-        padding: 7px 19px;
-        border-radius: 2px;
-        background-color: #2196F3;
-        font-size: 20px;
-        border: 1px solid #2196F3;
-        display: block;
-        min-height: 64px;
-        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
-        margin: 10px;
-        color: white
-    }
-    .myimg{
-        width: 100px;
-        height: 100px;
-        border-radius: 6px;
-    }
-    .swal2-container .swal2-popup{
-        min-width: 825px ;
-    }
-    @media only screen and (max-width: 600px) {
-        .popup-btn {
-            font-size: 13px;
-            min-height: 32px;
-        }
-        .swal2-container .swal2-popup{
-            min-width: 100% ;
-        }
-        .mybox{
-            width: 100%;
-        }
-        .myimg{
-            width: 80px;
-            height: 80px;
-        }
-    }
-</style>
+
 @endsection
 @section('content')
     {{-- Block hero --}}
@@ -105,36 +64,5 @@
 @endsection
 
 @section('js')
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-    Swal.fire({
-        width: 'auto',
-  title: '<strong>Nhu cầu của bạn?</u></strong>',
 
-  html:
-    `<div class='mybox'>
-        <div>
-            <img class='myimg' src='/images/home/fb_icon_325x325.png'>
-        </div>
-        <a class='popup-btn' href='https://shopgroup.vn/mua-group-facebook'> Tôi muốn: Mua group Facebook</a>
-    </div>
-    <div class='mybox'>
-        <div>
-            <img class='myimg' src='/images/home/fb_icon_325x325.png'>
-        </div>
-        <a class='popup-btn' href='https://shopgroup.vn/mua-fanpage-facebook'> Tôi muốn: Mua fanpage Facebook</a>
-    </div>
-    <div class='mybox'>
-        <div>
-            <img class='myimg' src='/images/home/share_img.png'>
-        </div>
-        <a class='popup-btn' href='https://shopgroup.vn/mua-kenh-tiktok'> Tôi muốn: Mua kênh TikTok</a>
-    </div>
-    `,
-  showCloseButton: true,
-  confirmButtonText:
-    '<i class="fa fa-thumbs-up"></i> Hủy',
-  confirmButtonAriaLabel: 'Thumbs up, great!',
-})
-</script>
 @endsection

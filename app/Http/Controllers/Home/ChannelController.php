@@ -61,7 +61,7 @@ class ChannelController extends Controller
     public function getGoogleClient()
     {
         $client = new Google_Client();
-        $client->setRedirectUri('https://shopgroup.vn/key');
+        $client->setRedirectUri('https://ttbgroup.vn/key');
         $client->setApplicationName('Google Sheets API PHP Quickstart');
         $client->setScopes(Google_Service_Sheets::SPREADSHEETS_READONLY);
         $client->setAuthConfig(config_path('credentials.json'));
