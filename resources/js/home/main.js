@@ -120,7 +120,6 @@ for (let i = 0; i < elements.length; i++) {
     elements[i].addEventListener('click', addModal, false);
 }
 
-document.getElementById('modal-overlay').addEventListener('click', closeModal, false);
 
 
 if (window.location.pathname !== '/contact') {
@@ -131,43 +130,6 @@ if (window.location.pathname !== '/contact') {
             return item;
         });
     }, false);
-
-    window.addEventListener("scroll", function () {
-        document.getElementById("grid-hero").classList.add("visible");
-        onAppear.forEach(function (elem) {
-            let vwTop = window.pageYOffset;
-            let vwBottom = (window.pageYOffset + window.innerHeight);
-            let elemTop = elem.offsetTop;
-            let elemHeight = elem.offsetHeight;
-
-            if (vwBottom > elemTop && ((vwTop - elemHeight) < elemTop)) {
-                elem.classList.remove("visible");
-            } else {
-                elem.classList.add("visible");
-            }
-        });
-    }, false);
-
-    let scrollpos = window.scrollY
-    const hero = document.getElementById('grid-hero');
-    const hero_height = hero.offsetHeight
-
-    const add_class_on_scroll = () => hero.classList.add("fade-in")
-    const remove_class_on_scroll = () => hero.classList.remove("fade-in")
-
-    window.addEventListener('scroll', function () {
-        scrollpos = window.scrollY;
-
-        if (scrollpos <= hero_height) {
-            if (scrollpos > 20) {
-                add_class_on_scroll()
-            } else {
-                remove_class_on_scroll()
-            }
-        } else {
-            remove_class_on_scroll()
-        }
-    });
 }
 // scroll //
 (function () {
@@ -219,23 +181,7 @@ if (window.location.pathname !== '/contact') {
 
     window.addEventListener('scroll', checkScroll);
 })();
-window.addEventListener('scroll', function () {
-    scrollpos = window.scrollY;
 
-    if (scrollpos > 200) {
-        document.getElementById('scrolltop').classList.add('active');
-    } else {
-        document.getElementById('scrolltop').classList.remove('active');
-    }
-});
-
-// Dark/Light mode //
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-toggleSwitch.addEventListener('change', (e) => {
-    let theme = e.target.checked ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', theme);
-    fetch('?' + new URLSearchParams({theme :  theme})).then();
-});
 
 // collapse new detail
 function collapseContent () {
