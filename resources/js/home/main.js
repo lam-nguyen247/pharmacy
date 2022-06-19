@@ -105,16 +105,7 @@ window.onclick = function (event) {
     }
 }
 
-// Menu onmouseover addclass active //
-let header = document.getElementById("navi-menu");
-let btns = header.getElementsByClassName("navigation__item");
-for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("mouseover", function () {
-        let current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-    });
-}
+
 // Modal //
 let elements = document.getElementsByClassName("btn-modal");
 let addModal = function () {
@@ -129,7 +120,6 @@ for (let i = 0; i < elements.length; i++) {
     elements[i].addEventListener('click', addModal, false);
 }
 
-document.getElementById('close-btn').addEventListener('click', closeModal, false);
 document.getElementById('modal-overlay').addEventListener('click', closeModal, false);
 
 
