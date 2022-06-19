@@ -74,16 +74,10 @@ class AppServiceProvider extends ServiceProvider
         Configuration::observe(ConfigurationObserver::class);
 
         View::share('domain', Str::slug(request()->getHost()));
-        if(empty(session('theme'))){
-            Session::put('theme', 'light');
-        }
+
         try {
-            if (Cache::has('config')) {
-                $config = Cache::get('config');
-            } else {
-                $config = (object)Configuration::all()->pluck('content', 'name')->toArray();
-                Cache::put('config', $config);
-            }
+            $config = (object)Configuration::all()->pluck('content', 'name')->toArray();
+            Cache::put('config', $config);
             View::share('config', $config);
         } catch (Exception $e) {
             // NOP

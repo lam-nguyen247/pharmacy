@@ -33,313 +33,131 @@
     <!-- End Google Tag Manager -->
     @yield('css')
 </head>
+
 <body id="body-site">
 <!-- Google Tag Manager (noscript) -->
 
 <!-- End Google Tag Manager (noscript) -->
 
-<div class="navigation">
-    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-    {{-- icon --}}
-    <label id="navigation__button" for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon"></span>
-    </label>
-    <div id="navigation__background" class="navigation__background">
-    </div>
-    <div id="navigation__title" class="navigation__title menu" >
-        <nav class="site-nav">
-            <ul class="my-menu">
-                <li class="my-item"><a href="/@lang('about-us')" class="navigation__link">@lang('About Us')</a></li>
-                <li class="my-item">
-                    <a href="#">Dịch vụ Facebook</a>
-                    <ul class="sub-menu">
-                        <li class="sub-item">
-                           <a href="/mua-group-facebook">Bán Group Facebook</a>
-                        </li>
-                        {{-- <li class="sub-item"> <a href="/tin-tuc/tang-thanh-vien-cho-group"> Tăng thành viên cho Group </a></li> --}}
-                        <li class="sub-item"> <a href="/mua-fanpage-facebook"> Bán Fanpage Facebook </a></li>
-                        {{-- <li class="sub-item"> <a href="/tin-tuc/tang-like-cho-fanpage"> Tăng Like cho Fanpage </a></li> --}}
-                        {{-- <li class="sub-item"> <a href="/tin-tuc/thu-mua-lai-group-facebook"> Thu mua lại Group facebook </a></li>
-                        <li class="sub-item"> <a href="/tin-tuc/thu-mua-lai-fanpage"> Thu mua lại FanPage </a></li> --}}
-                    </ul>
-                </li class="my-item">
-                <li class="my-item">
-                    <a href="#">Dịch vụ Tiktok</a>
-                    <ul class="sub-menu">
-                        <li class="sub-item">
-                           <a href="/mua-kenh-tiktok">Bán tài khoản Tiktok</a>
-                        </li>
-                        {{-- <li class="sub-item">
-                            <a href="/chuyen-nhuong-lai-kenh-tiktok">Thu mua tài khoản Tiktok</a>
-                         </li> --}}
-                        {{-- <li class="sub-item"> <a href="/tin-tuc/tang-follow-tiktok"> Tăng Follow Tiktok</a></li>
-                        <li class="sub-item"> <a href="/tin-tuc/tang-like-tiktok"> Tăng Like Tiktok </a></li>
-                        <li class="sub-item"> <a href="/tin-tuc/tang-view-tiktok"> Tăng View Tiktok </a></li> --}}
-                    </ul>
-                </li>
-                <li class="my-item"> <a href="/@lang('news')" class="navigation__link" >@lang('News')</a> </li>
-                <li class="my-item"> <a href="/@lang('contact')" class="navigation__link">@lang('Contact')</a></li>
-                <li class="my-item"><a href="#"> <a href="/thong-tin-thanh-toan" class="navigation__link">Thông tin thanh toán</a></a></li>
-
-            </ul>
-          </nav>
-    </div>
-    <h3 id="navigation__title" class="navigation__title" style="color:white !important" data-cms="{{app()->getLocale()}}-layouts-app-23">LIÊN HỆ HOTLINE:  0988.50.8769 </h3>
-
-    {{-- language --}}
-    <div class="navigation__language language-picker js-language-picker" data-trigger-class="btn btn--subtle js-tab-focus">
-        <button class="language-picker__button" onclick="toggleDropdown()">
-            <img class="img-fluid" @src="/images/home/flag_{{app()->getLocale()}}.png" alt="image">
-            <em>{{app()->getLocale() == 'en' ? __('English') : __('Vietnamese')}}</em>
-            <svg viewBox="0 0 16 16" class="icon"><polygon points="3,5 8,11 13,5 "></polygon></svg>
-        </button>
-        <div id="language-content" class="dropdown-content">
-            <ul class="language-picker__list">
-                <li>
-                    <a href="/en" title="@lang('English')">
-                        <img class="img-fluid" @src="/images/home/flag_en.png" alt="@lang('English')">
-                        <span>@lang('English')</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/vi" title="@lang('Vietnamese')">
-                        <img class="img-fluid" @src="/images/home/flag_vi.png" alt="@lang('Vietnamese')">
-                        <span>@lang('Vietnamese')</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    {{-- Dark/Light mode --}}
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" {{session('theme') == 'dark' ? 'checked' : '' }}>
-            <div class="slider round">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="0.502638in" height="0.501575in" version="1.1" viewbox="0 0 502.64 501.57">
-                    <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path class="fil0" d="M500.62 322.06c-38.53,9.01 -72.33,40.44 -155.22,25.45 -51.69,-9.35 -97.71,-37.16 -124.62,-64.83 -63.29,-65.09 -86.84,-158.41 -52.58,-248.15 3.59,-9.4 11.11,-21.61 13.05,-31.98 -85.44,28.76 -144,83.86 -171.61,170.21 -33.74,105.52 11.37,203.76 63.6,257.39 128.48,131.92 374.62,82.21 427.37,-108.09z"></path>
-                    </g>
-                </svg>
-            </div>
-        </label>
-    </div>
-
-    <nav class="navigation__nav">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <div class="navigation__flex">
-                        <div class="navigation__content">
-                            <h4 class="navigation__lable" data-cms="{{app()->getLocale()}}-layouts-app-47">Menu</h4>
-                            <ul class="navigation__list" id="navi-menu">
-                                <li class="navigation__item active">
-                                    <a href="/@lang('about-us')" class="navigation__link">►@lang('About Us')</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <p  class="navigation__link" >►Dịch vụ Facebook</p>
-                                    <ul class="sub-menu">
-                                        <li class="sub-item">
-                                           <a href="/mua-group-facebook">Bán Group Facebook</a>
-                                        </li>
-                                        {{-- <li class="sub-item"> <a href="/tin-tuc/tang-thanh-vien-cho-group"> Tăng thành viên cho Group </a></li> --}}
-                                        <li class="sub-item"> <a href="/mua-fanpage-facebook"> Bán Fanpage Facebook </a></li>
-                                        {{-- <li class="sub-item"> <a href="/tin-tuc/tang-like-cho-fanpage"> Tăng Like cho Fanpage </a></li> --}}
-                                        {{-- <li class="sub-item"> <a href="/tin-tuc/thu-mua-lai-group-facebook"> Thu mua lại Group facebook </a></li>
-                                        <li class="sub-item"> <a href="/tin-tuc/thu-mua-lai-fanpage"> Thu mua lại FanPage </a></li> --}}
-                                    </ul>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="/mua-kenh-tiktok" class="navigation__link" >►Dịch vụ Tiktok</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-item">
-                                           <a href="/mua-kenh-tiktok">Bán tài khoản Tiktok</a>
-                                        </li>
-                                        {{-- <li class="sub-item">
-                                            <a href="/chuyen-nhuong-lai-kenh-tiktok">Thu mua tài khoản Tiktok</a>
-                                         </li> --}}
-                                        {{-- <li class="sub-item"> <a href="/tin-tuc/tang-follow-tiktok"> Tăng Follow Tiktok</a></li>
-                                        <li class="sub-item"> <a href="/tin-tuc/tang-like-tiktok"> Tăng Like Tiktok </a></li>
-                                        <li class="sub-item"> <a href="/tin-tuc/tang-view-tiktok"> Tăng View Tiktok </a></li> --}}
-                                    </ul>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="/@lang('news')" class="navigation__link" >►@lang('News')</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="/@lang('contact')" class="navigation__link">►@lang('Contact')</a>
-                                </li>
-                                <li class="navigation__item">
-                                    <a href="/thong-tin-thanh-toan" class="navigation__link">►Thông tin thanh toán</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="navigation__flex">
-                        <div class="navigation__content">
-                            <div class="navigation__image">
-                                <img id="menu-image" class="img-fluid" @src="/images/home/menu-about.png" alt="Images" data-cms="{{app()->getLocale()}}-layouts-app-65">
-                            </div>
-                            <div class="navigation__info">
-                                <ul class="navigation-list">
-                                    <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:{{$config->phone}}" title="Số điện thoại" data-cms="{{app()->getLocale()}}-layouts-app-70">0988.50.8769</a></li>
-                                    <li><span data-cms="{{app()->getLocale()}}-layouts-app-73">Email:</span> <a href="mailto:{{$config->email}}" title="Email" data-cms="{{app()->getLocale()}}-layouts-app-74">adgroup.vnn@gmail.com</a></li>
-                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> <span data-cms="{{app()->getLocale()}}-layouts-app-77">Zalo: 0988508769</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
-<header id="header" class="header">
-    <div class="container-fluid">
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
         <div class="row">
-            <div class="col-6">
-                <div class="header__logo-box d-flex align-items-center">
-                    <a href="/" title="logo">
-                        <img style="padding:10px" class="img-fluid" @src="/images/home/logo-white.png" alt="{{config('app.name')}}">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/templatemo-eduwell.png" alt="EduWell Template">
                     </a>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="header__nav"></div>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                        <li class="scroll-to-section"><a href="#services">Services</a></li>
+                        <li class="scroll-to-section"><a href="#courses">Courses</a></li>
+                        <li class="has-sub">
+                            <a href="javascript:void(0)">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="our-services.html">Our Services</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="scroll-to-section"><a href="#testimonials">Testimonials</a></li>
+                        <li class="scroll-to-section"><a href="#contact-section">Contact Us</a></li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
             </div>
         </div>
     </div>
 </header>
+<!-- ***** Header Area End ***** -->
 @yield('content')
-<footer class="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                {{-- <div class="col-12 col-md-4 col-lg-5">
-                    <div class="footer-content">
-                        <h1 style="font-size: 2rem" class="title" data-cms="{{app()->getLocale()}}-layouts-app-93">Thông tin công ty</h1>
-                        <ul class="footer-list">
 
-                        </ul>
-                    </div>
-                </div> --}}
-                <div class="col-12 col-md-4 col-lg-5">
-                    <div class="footer-content">
-                        <h1 style="font-size: 2rem"  class="title">Thông tin công ty</h1>
-                        <ul class="footer-list">
-                            <li><span>CÔNG TY CỔ PHẦN CÔNG NGHỆ TRUYỀN THÔNG MK MEDIA</span></li>
-                            <li><span>Địa chỉ: Số 15A Ngõ 21/13 Lĩnh Nam - Hoàng Mai - Hà Nội</span></li>
-                            <li><span>Mã số thuế: 0109379379</span> </li>
-                            <li><a href="tel:+840988508769" title="Số điện thoại">Hotline: {{$config->phone}}</a></li>
-                            <li><span>Email:</span> <a href="mailto:{{$config->email}}" title="Email" >{{$config->email}}</a></li>
-                            <li><span>Zalo:</span> <a href="https://zalo.me/{{$config->zalo}}" title="Zalo" >{{$config->zalo}}</a></li>
-                        </ul>
-                    </div>
+<section class="contact-us" id="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div id="map">
+
+            <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7151.84524236698!2d-122.19494600413192!3d47.56605883252286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490695e625f8965%3A0xf99b055e76477def!2sNewcastle%20Beach%20Park%20Playground%2C%20Bellevue%2C%20WA%2098006%2C%20USA!5e0!3m2!1sen!2sth!4v1644335269264!5m2!1sen!2sth" width="100%" height="420px" frameborder="0" style="border:0; border-radius: 15px; position: relative; z-index: 2;" allowfullscreen=""></iframe>
+            <div class="row">
+              <div class="col-lg-4 offset-lg-1">
+                <div class="contact-info">
+                  <div class="icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <h4>Phone</h4>
+                  <span>010-020-0340</span>
                 </div>
-                <div class="col-12 col-md-4 col-lg-2">
-                    <div class="footer-content">
-                        <h3 class="title">Facebook</h3>
-                        <ul class="footer-list">
-                            <li class="sub-item">
-                                <a href="/mua-group-facebook">Bán Group Facebook</a>
-                             </li>
-                             {{-- <li class="sub-item"> <a href="/tin-tuc/tang-thanh-vien-cho-group"> Tăng thành viên cho Group </a></li> --}}
-                             <li class="sub-item"> <a href="/mua-fanpage-facebook"> Bán Fanpage Facebook </a></li>
-                             {{-- <li class="sub-item"> <a href="/tin-tuc/tang-like-cho-fanpage"> Tăng Like cho Fanpage </a></li> --}}
-                             {{-- <li class="sub-item"> <a href="/tin-tuc/thu-mua-lai-group-facebook"> Thu mua lại Group facebook </a></li>
-                             <li class="sub-item"> <a href="/tin-tuc/Thu mua lại FanPage"> Thu mua lại FanPage </a></li> --}}
-                        </ul>
-                    </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="contact-info">
+                  <div class="icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <h4>Mobile</h4>
+                  <span>090-080-0760</span>
                 </div>
-                <div class="col-12 col-md-5 col-lg-2">
-                    <div class="footer-content">
-                        <h3 class="title" >Tiktok</h3>
-                        <ul class="footer-list">
-                            <li class="sub-item">
-                                <a href="/mua-kenh-tiktok">Bán tài khoản Tiktok</a>
-                             </li>
-                             {{-- <li class="sub-item">
-                                <a href="/chuyen-nhuong-lai-kenh-tiktok">Thu mua tài khoản Tiktok</a>
-                             </li> --}}
-                             {{-- <li class="sub-item"> <a href="/tin-tuc/tang-follow-tiktok"> Tăng Follow Tiktok</a></li>
-                             <li class="sub-item"> <a href="/tang-like-tiktok"> Tăng Like Tiktok </a></li>
-                             <li class="sub-item"> <a href="/tin-tuc/tang-view-tiktok"> Tăng View Tiktok </a></li> --}}
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-8 col-md-3 col-lg-3">
-                    <div class="footer-content">
-                        <h3 class="title">@lang('Follow us')</h3>
-                        <div class="fb-page" data-href="https://www.facebook.com/ttbgroup.vn" data-tabs="timeline" data-width="" data-height="200" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ttbgroup.vn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ttbgroup.vn">ttbgroup.vn</a></blockquote></div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>@lang('Design by') ShopGroup</p>
-    </div>
-</footer>
-<a id="scrolltop" class="scroll-top" onclick="document.documentElement.scrollIntoView({ behavior: 'smooth' });">
-    <svg class="icon icon-chevron-up"><use xlink:href="#icon-chevron-up"></use></svg>
-</a>
-<div class="overlay" id="modal-overlay"></div>
-<div class="modal" id="modal-form">
-    <button class="modal-close-btn" id="close-btn">
-        <svg class="icon"><use xlink:href="#icon-close"></use></svg>
-    </button>
-</div>
-<div class="box-contact">
-    <div class="hotline-phone" style="display: none;">
-        <div class="ring">
-          <div class="ring-circle"></div>
-          <div class="ring-circle-fill"></div>
-          <div class="ring-img-circle">
-            <a href="tel:+84988508769" class="btn-img">
-              <img src="/images/home/phone.png" width="38">
-            </a>
           </div>
         </div>
-        {{-- <div class="bar">
-          <a href="tel:+84899707888">
-            <span class="text-hotline">{{$config->zalo}}</span>
-          </a>
-        </div> --}}
-    </div>
-    <div class="messenger">
-      <div class="ring">
-            <div class="">
-            <a href="https://m.me/ttbgroup.vn" class="btn-img" target="_blank">
-                <img src="/images/home/social-media.png" width="38">
-            </a>
+        <div class="col-lg-4">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>Contact us</h6>
+                  <h4>Say <em>Hello</em></h4>
+                  <p>IF you need a working contact form by PHP script, please visit TemplateMo's contact page for more info.</p>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-gradient-button">Send Message</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
         </div>
-      </div>
-      <div class="bar">
-        <a href="https://m.me/ttbgroup.vn" target="_blank">
-          <span class="text-hotline">Facebook</span>
-        </a>
-      </div>
-    </div>
+        <div class="col-lg-12">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <p class="copyright">Copyright © 2022 EduWell Co., Ltd. All Rights Reserved.
 
-    <div class="zalo">
-      <div class="ring">
-            <div class="">
-                <a href="https://zalo.me/{{$config->zalo}}" class="btn-img" target="_blank">
-                <img src="/images/home/communication.png" width="38">
-          </a>
+          <br>Design: <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
         </div>
       </div>
-      <div class="bar">
-        <a href="https://zalo.me/{{$config->zalo}}" target="_blank">
-          <span class="text-hotline">Zalo</span>
-        </a>
-      </div>
     </div>
-</div>
+  </section>
 
 <script
   src="/js/home/jquery-3.6.0.min.js"></script>
