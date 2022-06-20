@@ -723,56 +723,6 @@ a {
     overflow: hidden;
 }
 
-header {
-    position: fixed;
-    height: 80px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background: rgba(20, 22, 26, .8);
-    /* fallback for old browsers */
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
-    .header__logo-box {
-        height: 24px;
-        padding-left: 10px;
-        img {
-            height: 80px;
-        }
-    }
-    .header__nav {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        .title {
-            font-size: .875rem;
-            line-height: 1.75rem;
-            text-align: center;
-            letter-spacing: 0.2px;
-            text-transform: uppercase;
-            color: $color-white;
-            font-weight: 700;
-            margin-right: 2rem;
-            border-bottom: 2px solid $color-white;
-        }
-    }
-}
 
 .navigation__title {
     position: fixed;

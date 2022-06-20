@@ -844,12 +844,12 @@ section.our-courses .naccs .menu div {
   vertical-align: middle;
   font-weight: 900;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  border: 3px solid rgba(219,138,222,0.5);
+  border: 3px solid rgba(24,133,62,0.5);
 }
 
 section.our-courses .naccs .menu div.active {
   color: #18853E;
-  border: 3px solid rgba(219,138,222,1);
+  border: 3px solid rgba(24,133,62,1);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
 }
 
