@@ -60,9 +60,6 @@ window.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
             let registerForm = new FormData(item);
             registerForm.append('_token', document.querySelector('meta[name="csrf-token"]').content);
-            for (let i = 0; i < item.elements.length; i++) {
-                item[i].disabled = true;
-            }
             setText(item, Language.sending);
             let action = item.getAttribute('action') ? item.getAttribute('action') : '/customer';
             let method = item.getAttribute('method') ? item.getAttribute('method') : 'post';
@@ -75,6 +72,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 })
                 .then(data => {
                     setText(item, Language.sentSuccessfully);
+                    setTimeout(()=>{
+                        setText(item, Language.send);
+                    }, 7000)
                 })
                 .catch(error => {
                     setText(item, Language.sentFailed);
@@ -85,14 +85,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 function setText(item, data) {
     let $submit = item.querySelector('[type=submit]');
-    if ($submit.tagName.toLowerCase() === 'input') {
-        $submit.value = data;
-    } else {
-        let span = $submit.querySelector('span');
-        if(span){
-            span.innerText = data;
-        }
-    }
+    $submit.innerText = data;
+    item.reset();
 }
 
 // --------- END CUSTOMER REGISTER ---------
