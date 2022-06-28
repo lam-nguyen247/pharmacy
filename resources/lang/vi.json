@@ -134,7 +134,7 @@
     "About": "Giới thiệu",
     "About Us": "Giới Thiệu Chung",
     "about-us": "gioi-thieu-chung",
-    "News": "Tin Tức",
+    "News": "Tin Tức & Sự Kiện",
     "news": "tin-tuc",
     "Services": "Dịch vụ",
     "Follow us": "Theo dõi",
@@ -146,5 +146,6 @@
     "Next page": "Trang sau",
     "Full Name": "Họ và tên",
     "Your Email": "Địa chỉ email",
-    "Your Message": "Nội dung"
+    "Your Message": "Nội dung",
+    "Activate": "Hoạt động"
 }

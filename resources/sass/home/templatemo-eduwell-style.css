@@ -326,7 +326,6 @@ header
   display: block;
   font-weight: 400;
   font-size: 14px;
-  text-transform: capitalize;
   color: #fff;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -336,6 +335,7 @@ header
   line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
+  text-transform: uppercase !important;
 }
 
 .header-area .main-nav .nav li:hover a,
