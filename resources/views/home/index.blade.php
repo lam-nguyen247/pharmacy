@@ -16,15 +16,15 @@
       <div class="col-lg-6 align-self-center">
         <div class="header-text">
           <h6 data-cms="{{app()->getLocale()}}-home-1">Welcome to our school</h6>
-          <h2>Best Place To Learn Graphic <em>Design!</em></h2>
+          <h2 data-cms="{{app()->getLocale()}}-home-2">Best Place To Learn Graphic <em data-cms="{{app()->getLocale()}}-home-3">Design!</em></h2>
           <div class="main-button-gradient">
-            <div class="scroll-to-section"><a href="#contact-section">Join Us Now!</a></div>
+            <div class="scroll-to-section"><a href="#contact-section">@lang('Contact')</a></div>
           </div>
         </div>
       </div>
       <div class="col-lg-6">
         <div class="right-image">
-          <img src="assets/images/banner-right-image.png" alt="">
+          <img @src="/images/banner-right-image.png" data-cms="{{app()->getLocale()}}-home-5" alt="">
         </div>
       </div>
     </div>
@@ -37,120 +37,23 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="section-heading">
-          <h6>Our Services</h6>
-          <h4>Provided <em>Services</em></h4>
+          {{-- <h6 data-cms="{{app()->getLocale()}}-home-5">Sản Phẩm Của Chúng Tôi</h6> --}}
+          <h4 data-cms="{{app()->getLocale()}}-home-6" >Sản Phẩm <em data-cms="{{app()->getLocale()}}-home-7" >Của Chúng Tôi</em></h4>
         </div>
       </div>
       <div class="col-lg-12">
         <div class="owl-service-item owl-carousel">
-          <div class="item">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/images/service-icon-01.png" alt="">
+            @foreach ($products as $product)
+                <div class="item">
+                    <div class="service-item">
+                    <div class="icon">
+                        <img src="{{$product->img}}" alt="">
+                    </div>
+                    <h4>{{$product->name}}</h4>
+                    {!!$product->excerpt!!}
+                    </div>
               </div>
-              <h4>Useful Tricks</h4>
-              <p>EduWell is the professional HTML5 template for your school or university websites.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/images/service-icon-02.png" alt="">
-              </div>
-              <h4>Creative Ideas</h4>
-              <p>You can download and use this EduWell Template for your teaching and learning stuffs.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/images/service-icon-03.png" alt="">
-              </div>
-              <h4>Ready Target</h4>
-              <p>Please tell your friends about the best CSS template website that is TemplateMo.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/images/service-icon-04.png" alt="">
-              </div>
-              <h4>Technology</h4>
-              <p>Aenean bibendum consectetur ex eu porttitor. Pellentesque id ultrices metus.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/images/service-icon-01.png" alt="">
-              </div>
-              <h4>Useful Tricks</h4>
-              <p>In non nisi eget magna efficitur ultricies non quis sapien. Pellentesque tellus.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/images/service-icon-02.png" alt="">
-              </div>
-              <h4>Creative Ideas</h4>
-              <p>Aenean bibendum consectetur ex eu porttitor. Pellentesque id ultrices metus.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/images/service-icon-03.png" alt="">
-              </div>
-              <h4>Ready Target</h4>
-              <p>In non nisi eget magna efficitur ultricies non quis sapien. Pellentesque tellus.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/images/service-icon-04.png" alt="">
-              </div>
-              <h4>Technology</h4>
-              <p>Aenean bibendum consectetur ex eu porttitor. Pellentesque id ultrices metus.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/images/service-icon-01.png" alt="">
-              </div>
-              <h4>Useful Tricks</h4>
-              <p>In non nisi eget magna efficitur ultricies non quis sapien. Pellentesque tellus.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/images/service-icon-02.png" alt="">
-              </div>
-              <h4>Creative Ideas</h4>
-              <p>Aenean bibendum consectetur ex eu porttitor. Pellentesque id ultrices metus.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/images/service-icon-03.png" alt="">
-              </div>
-              <h4>Ready Target</h4>
-              <p>In non nisi eget magna efficitur ultricies non quis sapien. Pellentesque tellus.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="service-item">
-              <div class="icon">
-                <img src="assets/images/service-icon-04.png" alt="">
-              </div>
-              <h4>Technology</h4>
-              <p>Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.</p>
-            </div>
-          </div>
+            @endforeach
         </div>
       </div>
     </div>
