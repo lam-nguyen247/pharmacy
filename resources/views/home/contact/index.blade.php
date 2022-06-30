@@ -21,14 +21,16 @@
       <div class="row">
         <div class="col-lg-5">
           <div class="section-heading">
-            <h6 data-cms="{{app()->getLocale()}}-contact-2">More Info</h6>
-            <h4 data-cms="{{app()->getLocale()}}-contact-3">Read More <em data-cms="{{app()->getLocale()}}-contact-4">About Us</em></h4>
+            <h6 data-cms="{{app()->getLocale()}}-contact-2">Thông tin</h6>
+            <h4 data-cms="{{app()->getLocale()}}-contact-3">TTB GROUP<em data-cms="{{app()->getLocale()}}-contact-4">Vì tin mà đến</em></h4>
           </div>
-          <p data-cms="{{app()->getLocale()}}-contact-5">Trust fund nocore broklyn humblebrag mustache
-            pork kitsch, bicycle rights hexagon schlitz keytar palo is
-            santo drinking vinegar fam ramps. <br><br>Four dollar toast and
-            edison bulb vinyl, listicle hashtag pug scenester typewrit
-            er yuccie street artboard or whatever to fill place.</p>
+          <p data-cms="{{app()->getLocale()}}-contact-5">Mong muốn đưa đến cho các doanh nghiệp mỹ phẩm Việt Nam những dòng sản phẩm chất lượng - uy tín, TTB tự tin là đơn vị gia công mỹ phẩm đáng để cho các đơn vị gửi gắm niềm tin sản phẩm của họ.
+            Hãy liên hệ với chúng tôi để được tư vấn kỹ hơn về sản phẩm! <br/>
+            ---------------------------------------- <br/>
+            TTB - NHÀ MÁY GIA CÔNG MỸ PHẨM HÀNG ĐẦU VIỆT NAM <br/>
+            Địa chỉ: Cụm công nghiệp Minh lãng, xã Minh Lãng, huyện Vũ Thư, tỉnh Thái Bình. <br/>
+            Trụ sở : Cụm công nghiệp Minh lãng, xã Minh Lãng, huyện Vũ Thư, tỉnh Thái Bình. <br/>
+            Hotline: 0989.490.820.</p>
         </div>
         <div class="col-lg-6 offset-lg-1 align-self-center">
           <div class="row">
