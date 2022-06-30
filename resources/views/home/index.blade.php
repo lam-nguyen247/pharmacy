@@ -1,7 +1,7 @@
 @extends('home.layouts.app')
 
-@section('title', 'ttbgroup.vn Đơn Vị Mua Bán Chuyển Nhượng Group Facebook Uy Tín')
-@section('description', 'Bạn đang có nhu cầu mua bán Group Facebook chất lượng? ttbgroup.vn - đơn vị mua bán chuyển nhượng Group Facebook uy tín tại Việt Nam sẽ giúp bạn làm điều đó.')
+@section('title', 'TTB GROUP Dược phẩm quốc tế')
+@section('description', '')
 @section('css')
 
 
