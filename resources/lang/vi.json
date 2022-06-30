@@ -85,6 +85,7 @@
     "New Post": "Thêm Bài Viết",
     "Edit Post": "Sửa Bài Viết",
     "Products": "Sản Phẩm",
+    "products": "san-pham",
     "All Products": "Tất Cả Sản Phẩm",
     "New Product": "Thêm Sản Phẩm",
     "Edit Product": "Sửa Sản Phẩm",
@@ -136,6 +137,10 @@
     "about-us": "gioi-thieu-chung",
     "News": "Tin Tức & Sự Kiện",
     "news": "tin-tuc",
+    "Recruits": "Tuyển dụng",
+    "recruits": "tuyen-dung",
+    "Activates": "Hoạt động",
+    "activates": "hoat-dong",
     "Services": "Dịch vụ",
     "Follow us": "Theo dõi",
     "Full name": "Họ và tên",
@@ -147,5 +152,6 @@
     "Full Name": "Họ và tên",
     "Your Email": "Địa chỉ email",
     "Your Message": "Nội dung",
-    "Activate": "Hoạt động"
+    "Activate": "Hoạt động",
+    "Recruit": "Tuyển dụng"
 }

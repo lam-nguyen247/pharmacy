@@ -25,8 +25,8 @@ class PostController extends Controller
             return redirect(trans($path));
         }
 
-        $postList = $this->postService->getPostList()->simplePaginate(12);
-        return view('home.post.index', compact('postList'));
+        $posts = $this->postService->getPostList()->simplePaginate(12);
+        return view('home.post.index', compact('posts'));
     }
 
     public function detail($news, Post $post)
@@ -37,8 +37,27 @@ class PostController extends Controller
         }
         $seo = $post->seo;
         $menuList = $this->imageService->getMenuList($post->content);
-        // dd($menuList);
-        $postList = $this->postService->getPostList()->limit(5)->get();
-        return view('home.post.detail', compact('menuList', 'post', 'seo', 'postList'));
+        $posts = $this->postService->getPostList()->limit(5)->get();
+        return view('home.post.detail', compact('menuList', 'post', 'seo', 'posts'));
+    }
+
+    public function activate(){
+        $path = 'activates';
+        if (request()->path() != trans($path)) {
+            return redirect(trans($path));
+        }
+
+        $posts = $this->postService->getPostList()->simplePaginate(12);
+        return view('home.post.activate', compact('posts'));
+    }
+
+    public function recruit(){
+        $path = 'recruits';
+        if (request()->path() != trans($path)) {
+            return redirect(trans($path));
+        }
+
+        $posts = $this->postService->getPostList()->simplePaginate(12);
+        return view('home.post.recruit', compact('posts'));
     }
 }

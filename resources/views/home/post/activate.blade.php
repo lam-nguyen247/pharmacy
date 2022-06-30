@@ -3,9 +3,10 @@
 @section('title', __('News'))
 
 @section('content')
+
 <br/>
 
-@include('home.includes.news')
+@include('home.includes.activate')
 
 @include('home.includes.simple')
   <section class="featured-product">

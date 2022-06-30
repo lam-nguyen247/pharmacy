@@ -1,13 +1,12 @@
 @extends('home.layouts.app')
 
-@section('title', __('News'))
+@section('title', __('Product'))
 
 @section('content')
-<br/>
 
-@include('home.includes.news')
+@include('home.includes.products')
 
-@include('home.includes.simple')
+    @include('home.includes.simple')
   <section class="featured-product">
     <div class="container">
       <div class="row">

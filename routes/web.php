@@ -12,6 +12,7 @@ use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Home\LocalizationController;
 use App\Http\Controllers\Home\PageController;
 use App\Http\Controllers\Home\PostController;
+use App\Http\Controllers\Home\ProductController;
 use App\Http\Controllers\Home\WebsiteController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -35,6 +36,9 @@ Route::get('{brandDesignPosm}', [BrandController::class, 'index'])->where('brand
 Route::get('{digitalMarketing}', [DigitalController::class, 'index'])->where('digitalMarketing', 'digital-marketing|dich-vu-digital-marketing');
 Route::get('{contact}', [ContactController::class, 'index'])->where('contact', 'contact|lien-he');
 Route::get('{news}', [PostController::class, 'index'])->where('news', 'news|tin-tuc');
+Route::get('{activates}', [PostController::class, 'activate'])->where('activates', 'activates|hoat-dong');
+Route::get('{recruits}', [PostController::class, 'recruit'])->where('recruits', 'recruits|tuyen-dung');
+Route::get('{products}', [ProductController::class, 'index'])->where('products', 'product|san-pham');
 Route::get('{news}/{post:slug}', [PostController::class, 'detail'])->where('news', 'news|tin-tuc');
 Route::get('mua-group-facebook', [ChannelController::class, 'index']);
 Route::get('mua-fanpage-facebook', [ChannelController::class, 'fanPage']);

@@ -5,7 +5,7 @@
 @section('content')
 <br/>
 
-@include('home.includes.news')
+@include('home.includes.recruit')
 
 @include('home.includes.simple')
   <section class="featured-product">

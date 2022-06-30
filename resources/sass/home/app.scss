@@ -2,3 +2,29 @@
 @import "owl.css";
 @import "lightbox.css";
 @import "fontawesome.css";
+// @import "main.scss";
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #18853E;
+    transition: visibility 0s, opacity .2s;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    i {
+        color: #fff;
+        padding-top: 10px;
+    }
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.img-fluid{
+    width: 23px;
+}
