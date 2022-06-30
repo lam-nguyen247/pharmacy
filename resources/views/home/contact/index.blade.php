@@ -22,7 +22,7 @@
         <div class="col-lg-5">
           <div class="section-heading">
             <h6 data-cms="{{app()->getLocale()}}-contact-2">Thông tin</h6>
-            <h4 data-cms="{{app()->getLocale()}}-contact-3">TTB GROUP<em data-cms="{{app()->getLocale()}}-contact-4">Vì tin mà đến</em></h4>
+            <h4 >TTB GROUP <em>@lang('Come because of faith')</em></h4>
           </div>
           <p data-cms="{{app()->getLocale()}}-contact-5">Mong muốn đưa đến cho các doanh nghiệp mỹ phẩm Việt Nam những dòng sản phẩm chất lượng - uy tín, TTB tự tin là đơn vị gia công mỹ phẩm đáng để cho các đơn vị gửi gắm niềm tin sản phẩm của họ.
             Hãy liên hệ với chúng tôi để được tư vấn kỹ hơn về sản phẩm! <br/>
