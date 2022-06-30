@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="XrscSqm4bh48Nw0IZhyH-JO52qXBf45BcSy5xigkL2Y" />
-    <meta property="og:image" content="@yield('cover', '/images/home/Logo_Ttb.png')"/>
-    <meta property="og:image:alt" content="@yield('cover', '/images/home/Logo_Ttb.png')"/>
-    <meta name="twitter:image" content="@yield('cover', '/images/home/Logo_Ttb.png')"/>
+    <meta property="og:image" content="@yield('cover', '/images/Logo_Ttb.png')"/>
+    <meta property="og:image:alt" content="@yield('cover', '/images/Logo_Ttb.png')"/>
+    <meta name="twitter:image" content="@yield('cover', '/images/Logo_Ttb.png')"/>
     <meta property="og:url" content=" {{  Request::url() }} "/>
     <meta property="og:type" content=" {{  Request::url() }} "/>
     @isset($seo)
@@ -24,7 +24,7 @@
     @endif
     @cms
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/admin/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/Logo_Ttb.png">
     <link rel="canonical" href="{{request()->url()}}">
     <!-- Custom CSS -->
     <link href="/css/home/reset.css" rel="stylesheet">
