@@ -110,15 +110,50 @@
                 <p>Giấy chứng nhận ĐKKD số 0102190173 do Sở Kế hoạch và Đầu tư TP.HN cấp ngày 20/03/2007</p>
             </div>
         </div>
-        <div class="col-lg-3"></div>
+        <div class="col-lg-3 list">
+            <h4>@lang('Information') </h4> <br/>
+            <a href="@lang('contact')"> @lang('Contact') </a>
+            <a href="@lang('recruits')"> @lang('Recruit')</a>
+            <a href="@lang('products')"> @lang('Products') </a>
+            <a href="#"> Chính sách bảo mật thông tin </a>
+            <a href="#"> Chính sách biên tập </a>
+            <a href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=8952">
+                <img src="https://tambinh.vn/wp-content/themes/tam-binh/assets/images/home/icon1.png" data-src="https://tambinh.vn/wp-content/themes/tam-binh/assets/images/home/icon1.png" class="lazy-loaded">
+            </a>
+        </div>
         <div class="col-lg-3">
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-          </ul>
+           <div class="info">
+            <h4> @lang('Contact')</h4>  <br/>
+            <form id="contact" class="form js-form" action="" method="post" style="
+                margin-left: 0px;
+                padding: 0px;
+                margin: 0px;
+                background: none;
+            ">
+                            <input type="email" class="email" placeholder="@lang('E-Mail Address')" style="
+                width: 57%;
+                margin: 0px;
+                border-radius: 5px 0px 0px 5px;
+                height: 39px;
+            ">
+                            <button type="submit" class="submit" style="
+                float: none;
+                border-radius: 0px 5px 5px 0px;
+                margin: 0px;
+                margin-left: -4px;
+                padding: 10px 30px;
+                border: 1px solid  #18853E;
+                border-left: none;
+            ">@lang('Send')</button>
+            </form>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/ttbgroup.vn" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+           </div>
         </div>
         <div class="col-lg-12">
           <p class="copyright">Copyright © 2022 TTP GROUP Co., Ltd. All Rights Reserved.

@@ -206,7 +206,7 @@ section {
 }
 
 #contact-section {
-  padding-top: 20px;
+  padding: 20px 0px;
 }
 
 .section-heading {
@@ -1125,6 +1125,24 @@ section.contact-us .contact-info .icon i {
   background: linear-gradient(-145deg, rgba(24,133,62,1)0%, rgba(162,247,159,1)100%);
   color: #fff;
 }
+section.contact-us .list{
+    a{
+        display: block;
+        font-weight: bold;
+        color: white;
+        font-size: 13px;
+    }
+    img{
+        max-width: 135px;
+    }
+    h4{
+        color: white;
+        line-height: 1.5;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
 
 section.contact-us .contact-info h4 {
   font-size: 18px;
@@ -1212,8 +1230,7 @@ section.contact-us ul.social-icons li {
 }
 
 section.contact-us ul.social-icons {
-  text-align: center;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 section.contact-us ul.social-icons li a {

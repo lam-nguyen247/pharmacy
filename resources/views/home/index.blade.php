@@ -163,7 +163,7 @@
   </div>
 </section>
 
-<section class="simple-cta">
+<section class="simple-cta section">
   <div class="container">
     <div class="row">
       <div class="col-lg-5 offset-lg-1">
