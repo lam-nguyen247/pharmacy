@@ -48,6 +48,7 @@
     -webkit-touch-callout: none; }
   .owl-carousel .owl-item img {
     display: block;
+    max-height: 95vh;
     width: 100%; }
   .owl-carousel .owl-nav.disabled,
   .owl-carousel .owl-dots.disabled {
