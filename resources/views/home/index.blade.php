@@ -168,7 +168,7 @@
     <div class="row">
       <div class="col-lg-5 offset-lg-1">
         <div class="left-image">
-          <img @src="/images/ttp_group2.jpg" data-cms="{{app()->getLocale()}}-home-32a" alt="">
+          <img @src="/images/ttb_group2.jpg" data-cms="{{app()->getLocale()}}-home-32a" alt="">
         </div>
       </div>
       <div class="col-lg-5 align-self-center">
