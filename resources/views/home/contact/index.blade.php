@@ -16,7 +16,7 @@
     </div>
   </section>
 
-  <section class="contact-us" id="contact-section">
+  <section class="contact-us section" id="contact-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">

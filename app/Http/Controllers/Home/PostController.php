@@ -36,9 +36,8 @@ class PostController extends Controller
             return redirect(trans($path));
         }
         $seo = $post->seo;
-        $menuList = $this->imageService->getMenuList($post->content);
         $posts = $this->postService->getPostList()->limit(5)->get();
-        return view('home.post.detail', compact('menuList', 'post', 'seo', 'posts'));
+        return view('home.post.detail', compact('post', 'seo', 'posts'));
     }
 
     public function activate(){

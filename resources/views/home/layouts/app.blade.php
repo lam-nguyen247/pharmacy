@@ -96,7 +96,7 @@
     <i class="fa fa-chevron-up"></i>
 </a>
 <section class="contact-us" id="contact-section">
-    <div class="container">
+    <div class="container-fluid" style="padding: 0px 60px">
       <div class="row">
         <div class="column col-lg-3 logo-div">
             <img class="logo" src="/images/ttbgroup_logo_footer.png">
