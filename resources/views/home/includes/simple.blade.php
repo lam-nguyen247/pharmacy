@@ -9,9 +9,9 @@
         <div class="col-lg-5 align-self-center">
           <h6 data-cms="{{app()->getLocale()}}-simple-2">Luôn luôn không ngừng phát triển công thức mỹ phẩm mới</h6>
           <h4 data-cms="{{app()->getLocale()}}-simple-3">TTB GROUP</h4>
-          <p data-cms="{{app()->getLocale()}}-simple-4">Vì tin mà đến!</p>
-          <div class="white-button">
-            <a href="#contact-section">@lang('Contact')</a>
+          <i class="italic" data-cms="{{app()->getLocale()}}-simple-4">Vì tin mà đến!</i>
+          <div class="white-button" style="margin-top: 40px">
+            <a href="/@lang('contact')">@lang('Contact')</a>
           </div>
         </div>
       </div>

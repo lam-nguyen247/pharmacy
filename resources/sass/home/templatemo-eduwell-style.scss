@@ -969,11 +969,14 @@ section.our-courses ul.nacc li p {
 cta
 ---------------------------------------------
 */
+.italic{
+    color: #fff;
+}
 
 section.simple-cta {
   background: linear-gradient(-145deg, rgba(24,133,62,1)0%, rgba(162,247,159,1)100%) !important;
   width: 100%;
-  padding: 180px 0px 180px 0px;
+  padding: 80px 0px 80px 0px;
 }
 
 section.simple-cta .left-image {
@@ -995,7 +998,6 @@ section.simple-cta h4 {
 
 section.simple-cta p {
   color: #fff;
-  margin-top: 30px;
   margin-bottom: 40px;
 }
 
@@ -1928,4 +1930,15 @@ body {
   section.more-info .count-area-content .count-title {
     font-size: 22px;
   }
+  .contact-us{
+     .column{
+         border-bottom: 1px solid white;
+         padding-bottom: 20px;
+         margin-top: 20px;
+     }
+    .logo-div{
+        display: none;
+    }
+  }
+
 }

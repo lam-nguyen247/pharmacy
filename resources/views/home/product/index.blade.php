@@ -6,7 +6,7 @@
 
 @include('home.includes.products')
 
-    @include('home.includes.simple')
+@include('home.includes.simple')
   <section class="featured-product">
     <div class="container">
       <div class="row">

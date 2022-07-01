@@ -98,10 +98,10 @@
 <section class="contact-us" id="contact-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="column col-lg-3 logo-div">
             <img class="logo" src="/images/ttbgroup_logo_footer.png">
         </div>
-        <div class="col-lg-3">
+        <div class="column col-lg-3">
             <div class="info">
                 <h4>Công Ty Dược Phẩm Quốc Tế <br/> TTB Group</h4>
                 <p>@lang('Address'): <span data-cms="{{app()->getLocale()}}-address">Cụm công nghiệp Minh lãng, xã Minh Lãng, huyện Vũ Thư, tỉnh Thái Bình.</span></p>
@@ -110,7 +110,7 @@
                 <p>Giấy chứng nhận ĐKKD số 0102190173 do Sở Kế hoạch và Đầu tư TP.HN cấp ngày 20/03/2007</p>
             </div>
         </div>
-        <div class="col-lg-3 list">
+        <div class="column col-lg-3 list">
             <h4>@lang('Information') </h4> <br/>
             <a href="@lang('contact')"> @lang('Contact') </a>
             <a href="@lang('recruits')"> @lang('Recruit')</a>
@@ -121,7 +121,7 @@
                 <img src="https://tambinh.vn/wp-content/themes/tam-binh/assets/images/home/icon1.png" data-src="https://tambinh.vn/wp-content/themes/tam-binh/assets/images/home/icon1.png" class="lazy-loaded">
             </a>
         </div>
-        <div class="col-lg-3">
+        <div class="column col-lg-3">
            <div class="info">
             <h4> @lang('Contact')</h4>  <br/>
             <form id="contact" class="form js-form" action="" method="post" style="

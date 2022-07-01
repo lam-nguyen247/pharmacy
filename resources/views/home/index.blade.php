@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="col-lg-12">
-        <iframe width="100%" style="height: 75vh" src="https://www.youtube.com/embed/SXGDPyqGPRo?autoplay=1&showinfo=0&controls=0&modestbranding=0" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+        <iframe width="100%" style="height: 75vh" src="https://www.youtube.com/embed/SXGDPyqGPRo?autoplay=0&showinfo=0&controls=0&modestbranding=0" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
       </div>
 
     </div>
@@ -176,7 +176,7 @@
         <h4 data-cms="{{app()->getLocale()}}-home-33">TTB GROUP tự hào là đơn vị sản xuất, gia công Dược mỹ phẩm quy mô lớn nhất! </h4>
         <p data-cms="{{app()->getLocale()}}-home-34">Hân hạnh được chào đón Quý đối tác có nhu cầu gia công thương hiệu riêng với những dòng sản phẩm Dược mỹ phẩm chất lượng tốt nhất!</p>
         <div class="white-button scroll-to-section">
-          <a href="#contact-section">@lang('Contact')</a>
+          <a href="/@lang('contact')">@lang('Contact')</a>
         </div>
       </div>
     </div>

@@ -1421,10 +1421,14 @@ cta
 ---------------------------------------------
 */
 
+.italic {
+  color: #fff;
+}
+
 section.simple-cta {
   background: linear-gradient(-145deg, #18853e 0%, #a2f79f 100%) !important;
   width: 100%;
-  padding: 180px 0px 180px 0px;
+  padding: 80px 0px 80px 0px;
 }
 
 section.simple-cta .left-image {
@@ -1446,7 +1450,6 @@ section.simple-cta h4 {
 
 section.simple-cta p {
   color: #fff;
-  margin-top: 30px;
   margin-bottom: 40px;
 }
 
@@ -2409,6 +2412,16 @@ body {
 
   section.more-info .count-area-content .count-title {
     font-size: 22px;
+  }
+
+  .contact-us .column {
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .contact-us .logo-div {
+    display: none;
   }
 }
 
