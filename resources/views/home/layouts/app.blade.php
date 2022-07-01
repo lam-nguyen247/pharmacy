@@ -49,7 +49,7 @@
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="/" class="logo" >
-                        <img src="/images/Logo_Ttb.png" alt="TTB Group"> TTB GROUP
+                        <img src="/images/ttb_group_logo.png" alt="TTB Group">
                     </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->

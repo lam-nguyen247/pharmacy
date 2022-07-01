@@ -198,7 +198,7 @@ body {
 }
 
 section {
-  margin-top: 80px;
+  margin-top: 180px;
 }
 
 #contact-section {
@@ -246,18 +246,16 @@ header
 ---------------------------------------------
 */
 .background-header {
-  background: rgb(219,138,222) !important;
-  background: linear-gradient(-145deg, rgba(24,133,62,1)0%, rgba(162,247,159,1)100%) !important;
   height: 80px!important;
   position: fixed!important;
   top: 0!important;
   left: 0;
   right: 0;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  background: white;
 }
 
 .header-area {
-  background-image: url(../images/header-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -280,7 +278,7 @@ header
 
 .header-area .main-nav .logo {
   line-height: 100px;
-  color: #fff;
+  color: #009F4E;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
@@ -297,7 +295,7 @@ header
   line-height: 75px;
 }
 .logo img{
-    max-width: 75px;
+    max-width: 190px;
   }
 
 
@@ -329,9 +327,9 @@ header
 
 .header-area .main-nav .nav li a {
   display: block;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
-  color: #fff;
+  color: #009F4E;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -345,13 +343,13 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fff!important;
+  color: #18853E!important;
   opacity: 0.75;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #fff!important;
+  color: #18853E!important;
   opacity: 1;
 }
 
@@ -450,7 +448,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: #18853E;
   display: block;
   position: absolute;
   width: 30px;
@@ -461,7 +459,7 @@ header
 .background-header .main-nav .menu-trigger span,
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #fff;
+  background-color: #18853E;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -470,7 +468,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #fff;
+  background-color: #18853E;
   display: block;
   position: absolute;
   width: 30px;
@@ -481,7 +479,7 @@ header
 
 .background-header .main-nav .menu-trigger span:before,
 .background-header .main-nav .menu-trigger span:after {
-  background-color: #fff;
+  background-color: #18853E;
 }
 
 .header-area .main-nav .menu-trigger span:before,
@@ -522,11 +520,11 @@ header
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #fff;
+  background-color: #18853E;
 }
 
 .background-header .main-nav .menu-trigger.active span:before {
-  background-color: #fff;
+  background-color: #18853E;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -534,11 +532,11 @@ header
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #fff;
+  background-color: #18853E;
 }
 
 .background-header .main-nav .menu-trigger.active span:after {
-  background-color: #fff;
+  background-color: #18853E;
 }
 
 .header-area.header-sticky {
@@ -680,7 +678,7 @@ section.main-banner {
 }
 
 .main-banner {
-  padding-top: 180px;
+  padding-top: 80px;
 }
 
 .main-banner .right-image {
@@ -969,10 +967,7 @@ cta
 */
 
 section.simple-cta {
-  background-image: url(../images/cta-bg.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background: linear-gradient(-145deg, rgba(24,133,62,1)0%, rgba(162,247,159,1)100%) !important;
   width: 100%;
   padding: 180px 0px 180px 0px;
 }
@@ -1758,8 +1753,7 @@ body {
     font-size: 62px;
   }
   .header-area {
-    background: rgb(219,138,222) !important;
-    background: linear-gradient(-145deg, rgba(24,133,62,1)0%, rgba(162,247,159,1)100%) !important;
+    background: white;
   }
   .services .owl-nav .owl-next{
     right: -70px;

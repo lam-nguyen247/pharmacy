@@ -19,7 +19,7 @@
                 <a href="{{$post->href}}">
                     <h4>{{$post->name}}</h4>
                 </a>
-                <span>{{$post->category[0]->name}}</span>
+                <span>{{isset($post->category[0])?$post->category[0]->name:''}}</span>
             </div>
             @endforeach
           </div>

@@ -11,40 +11,19 @@
 
 <!-- ***** Main Banner Area Start ***** -->
 <section class="main-banner" id="top">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-6 align-self-center">
-        <div class="header-text">
-          {{-- <h6 data-cms="{{app()->getLocale()}}-home-1">Công ty</h6> --}}
-          <h2 data-cms="{{app()->getLocale()}}-home-2">Dược phẩm quốc tế <em data-cms="{{app()->getLocale()}}-home-3" style="font-weight: bold;">TTB GROUP</em></h2>
-          <div class="main-button-gradient">
-            <div class="scroll-to-section"><a href="#contact-section">@lang('Contact')</a></div>
-          </div>
+        <div class="owl-service-item owl-carousel slides" style="padding: 0px !important">
+            @foreach ($slides as $slide)
+                <div class="item" style="width: 100%">
+                    <img src="{{$slide->image}}" alt="">
+              </div>
+            @endforeach
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="right-image">
-          <img @src="/images/ttb_group2.jpg" data-cms="{{app()->getLocale()}}-home-5" alt="">
-        </div>
-      </div>
     </div>
   </div>
 </section>
 <!-- ***** Main Banner Area End ***** -->
-
-Gia công mỹ phẩm trọn gói hiện nay đang là một trong những dịch vụ rất được ưa chuộng trên thị trường. Đây được xem là một giải pháp toàn diện giúp các doanh nghiệp giảm thiểu rất nhiều chi phí, thời gian và công sức -  mang nhiều ưu điểm nổi bật:
-✅ Có sẵn đội ngũ nghiên cứu công thức
-✅ Mẫu mã sản phẩm đa dạng, linh hoạt
-✅ Thủ tục pháp lý nhanh gọn
-✅ Tiết kiệm thời gian chi phí và dễ dàng kiểm soát
-✅ Giảm tối đa chi phí sản xuất
-👉 Mong muốn đưa đến cho các doanh nghiệp mỹ phẩm Việt Nam những dòng sản phẩm chất lượng - uy tín, TTB tự tin là đơn vị gia công mỹ phẩm đáng để cho các đơn vị gửi gắm niềm tin sản phẩm của họ.
-Hãy liên hệ với chúng tôi để được tư vấn kỹ hơn về sản phẩm!
-----------------------------------------
-TTB - NHÀ MÁY GIA CÔNG MỸ PHẨM HÀNG ĐẦU VIỆT NAM
-🏤 Địa chỉ: Cụm công nghiệp Minh lãng, xã Minh Lãng, huyện Vũ Thư, tỉnh Thái Bình.
-🏭 Trụ sở : Cụm công nghiệp Minh lãng, xã Minh Lãng, huyện Vũ Thư, tỉnh Thái Bình.
-☎️ Hotline: 0989.490.820
 
 @include('home.includes.products')
 
@@ -199,7 +178,22 @@ TTB - NHÀ MÁY GIA CÔNG MỸ PHẨM HÀNG ĐẦU VIỆT NAM
 
 
 @section('js')
+
 <script>
+
+$(document).ready(function() {
+
+ $(".slides").owlCarousel({
+
+     autoPlay: 3000,
+     items : 1,
+
+     center: true,
+     nav:true,
+     loop:true
+ });
+
+});
     let Language = (function() {
         return {
             send: `@lang('Send')`,
