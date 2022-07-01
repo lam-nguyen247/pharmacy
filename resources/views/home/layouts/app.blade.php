@@ -98,68 +98,20 @@
 <section class="contact-us" id="contact-section">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8">
-            <div id="map">
-
-              <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
-              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3724.9248657636927!2d105.80658711533175!3d20.995648694282742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zxJAuIE5ndXnhu4VuIFRyw6NpLCBUaGFuaCBYdcOibiBUcnVuZywgxJDhu5FuZyDEkGEsIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1656427696394!5m2!1svi!2s" width="100%" height="420px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <div class="row">
-                <div class="col-lg-5 offset-lg-1">
-                  <div class="contact-info">
-                    <div class="icon">
-                      <i class="fa fa-phone"></i>
-                    </div>
-                    <h4>Phone</h4>
-                    <span>098 949 08 20</span>
-                  </div>
-                </div>
-                <div class="col-lg-5">
-                  <div class="contact-info">
-                    <div class="icon">
-                      <i class="fa fa-envelope"></i>
-                    </div>
-                    <h4>Email</h4>
-                    <span> duocphamttbgroup@gmail.com</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 ml-2">
-            <form id="contact" class="form js-form" action="" method="post">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="section-heading">
-                    <h6>@lang('Contact')</h6>
-                    <h4 data-cms="{{app()->getLocale()}}-home-37">TTB <em data-cms="{{app()->getLocale()}}-home-38">GROUP</em></h4>
-                    <p data-cms="{{app()->getLocale()}}-home-39">Chắc chắn Khách hàng sẽ vô cùng hài lòng. Lựa chọn Tuyệt vời nhất cho DN của bạn là Lựa chọ ln TTB Group.</p>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <input type="name" name="name" id="name" placeholder="@lang('Full Name')" autocomplete="on" required>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="@lang('Your Email')" required="">
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <textarea name="content" id="message" placeholder="@lang('Your Message')"></textarea>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <button type="submit" id="form-submit" class="main-gradient-button">@lang('Send')</button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
-          </div>
+        <div class="col-lg-3">
+            <img class="logo" src="/images/ttbgroup_logo_footer.png">
         </div>
-        <div class="col-lg-12">
+        <div class="col-lg-3">
+            <div class="info">
+                <h4>Công Ty Dược Phẩm Quốc Tế <br/> TTB Group</h4>
+                <p>@lang('Address'): <span data-cms="{{app()->getLocale()}}-address">Cụm công nghiệp Minh lãng, xã Minh Lãng, huyện Vũ Thư, tỉnh Thái Bình.</span></p>
+                <p>@lang('Phone'): <span data-cms="{{app()->getLocale()}}-phone">0989.490.820</span></p>
+                <p>@lang('Email'): <span data-cms="{{app()->getLocale()}}-email">duocphamttbgroup@gmail.com</span></p>
+                <p>Giấy chứng nhận ĐKKD số 0102190173 do Sở Kế hoạch và Đầu tư TP.HN cấp ngày 20/03/2007</p>
+            </div>
+        </div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3">
           <ul class="social-icons">
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter"></i></a></li>

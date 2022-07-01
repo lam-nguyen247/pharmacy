@@ -25,9 +25,27 @@
 </section>
 <!-- ***** Main Banner Area End ***** -->
 
+<!-- ***** Main Banner Area Start ***** -->
+<section style="margin-top: 0px">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="section-heading">
+          <h4 >TTB <em>GROUP</em></h4>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <iframe width="100%" style="height: 75vh" src="https://www.youtube.com/embed/SXGDPyqGPRo?autoplay=1&showinfo=0&controls=0&modestbranding=0" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ***** Main Banner Area End ***** -->
+
 @include('home.includes.products')
 
-<section class="our-courses" id="courses">
+<section class="our-courses section" id="courses">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 offset-lg-3">
@@ -43,11 +61,11 @@
             <div class="row">
               <div class="col-lg-3">
                 <div class="menu">
-                  <div class="active gradient-border"><span data-cms="{{app()->getLocale()}}-home-12" >Nhân sự</span></div>
-                  <div class="gradient-border"><span data-cms="{{app()->getLocale()}}-home-13" >Mẫu mã</span></div>
-                  <div class="gradient-border"><span data-cms="{{app()->getLocale()}}-home-14" >Thủ tục</span></div>
-                  <div class="gradient-border"><span data-cms="{{app()->getLocale()}}-home-15">Thời gian</span></div>
-                  <div class="gradient-border"><span data-cms="{{app()->getLocale()}}-home-15a">Chi phí</span></div>
+                    <div class="active gradient-border"><span data-cms="{{app()->getLocale()}}-home-12" >Có sẵn đội ngũ nghiên cứu công thức</span></div>
+                    <div class="gradient-border"><span data-cms="{{app()->getLocale()}}-home-13" >Mẫu mã sản phẩm đa dạng, linh hoạt</span></div>
+                    <div class="gradient-border"><span data-cms="{{app()->getLocale()}}-home-14" >Thủ tục pháp lý nhanh gọn</span></div>
+                    <div class="gradient-border"><span data-cms="{{app()->getLocale()}}-home-15b">Tiết kiệm thời gian chi phí và dễ dàng kiểm soát</span></div>
+                    <div class="gradient-border"><span data-cms="{{app()->getLocale()}}-home-155">Giảm tối đa chi phí sản xuất</span></div>
                 </div>
               </div>
               <div class="col-lg-9">
@@ -55,25 +73,18 @@
                   <li class="active">
                     <div>
                       <div class="left-image">
-                        <img @src="/images/courses-01.jpg" data-cms="{{app()->getLocale()}}-home-16" alt="">
+                        <img @src="/images/ttb_group8.jpg" data-cms="{{app()->getLocale()}}-home-16" alt="">
                         {{-- <div class="price"><h6>$128</h6></div> --}}
                       </div>
                       <div class="right-content">
-                        <h4 data-cms="{{app()->getLocale()}}-home-17">Có sẵn đội ngũ nghiên cứu công thức </h4>
-                        <p data-cms="{{app()->getLocale()}}-home-18">Mô tả.</p>
-                        {{-- <span>36 Hours</span>
-                        <span>4 Weeks</span>
-                        <span class="last-span">3 Certificates</span> --}}
-                        <div class="text-button">
-                          <a href="#" data-cms="{{app()->getLocale()}}-home-19">link</a>
-                        </div>
+
                       </div>
                     </div>
                   </li>
                   <li>
                     <div>
                       <div class="left-image">
-                        <img @src="/images/courses-02.jpg" alt="" data-cms="{{app()->getLocale()}}-home-20">
+                        <img @src="/images/ttb_group7.jpg" alt="" data-cms="{{app()->getLocale()}}-home-20">
                         {{-- <div class="price"><h6>$156</h6></div> --}}
                       </div>
                       <div class="right-content">
@@ -91,7 +102,7 @@
                   <li>
                     <div>
                       <div class="left-image">
-                        <img @src="/images/courses-03.jpg" alt="" data-cms="{{app()->getLocale()}}-home-24">
+                        <img @src="/images/ttb_group6.jpg" alt="" data-cms="{{app()->getLocale()}}-home-24">
                         {{-- <div class="price"><h6>$184</h6></div> --}}
                       </div>
                       <div class="right-content">
@@ -109,7 +120,7 @@
                   <li>
                     <div>
                       <div class="left-image">
-                        <img @src="/images/courses-04.jpg" alt="" data-cms="{{app()->getLocale()}}-home-28">
+                        <img @src="/images/ttb_group5.jpg" alt="" data-cms="{{app()->getLocale()}}-home-28">
                         {{-- <div class="price"><h6>$76</h6></div> --}}
                       </div>
                       <div class="right-content">
@@ -127,7 +138,7 @@
                     <li>
                         <div>
                           <div class="left-image">
-                            <img @src="/images/courses-04.jpg" alt="" data-cms="{{app()->getLocale()}}-home-28">
+                            <img @src="/images/ttb_group4.jpg" alt="" data-cms="{{app()->getLocale()}}-home-28">
                             {{-- <div class="price"><h6>$76</h6></div> --}}
                           </div>
                           <div class="right-content">

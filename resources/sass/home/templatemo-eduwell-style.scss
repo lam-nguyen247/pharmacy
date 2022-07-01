@@ -201,6 +201,10 @@ section {
   margin-top: 180px;
 }
 
+.section {
+    margin-top: 80px;
+}
+
 #contact-section {
   padding-top: 20px;
 }
@@ -756,10 +760,11 @@ services
   padding: 50px 30px;
   margin: 15px;
   transition: all .3s;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
 }
 
 .services .item:hover {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
 .services .item .icon {
@@ -880,10 +885,8 @@ section.our-courses ul.nacc li {
 }
 
 section.our-courses ul.nacc li .left-image {
-  position: absolute;
-  margin-right: 50px;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 100%;
+  max-height: 80vh;
 }
 
 section.our-courses ul.nacc li .left-image img {
@@ -909,6 +912,7 @@ section.our-courses ul.nacc li .left-image .price h6 {
 }
 
 section.our-courses ul.nacc li .right-content {
+    display: none;
   padding: 40px 0px;
   margin-left: 350px;
 }
@@ -1092,24 +1096,11 @@ contact us
 */
 
 section.contact-us {
-  background-image: url(../images/footer-bg.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0px;
-  position: relative;
+    background: linear-gradient(-145deg, rgba(24,133,62,1)0%, rgba(162,247,159,1)100%) !important;
+    padding: 0px;
+    position: relative;
 }
 
-section.contact-us:after {
-  position: absolute;
-  content: '';
-  background-image: url(../images/footer-left-dec.png);
-  left: 0px;
-  top: 60px;
-  width: 267px;
-  height: 396px;
-  z-index: 1;
-}
 
 section.contact-us .contact-info {
   background-color: #fff;
@@ -1236,7 +1227,23 @@ section.contact-us ul.social-icons li a {
   border-radius: 50%;
   transition: all .5s;
 }
+section.contact-us .logo{
+    margin-top: -20px;
+    width: 70%;
+    border-radius: 0px 0px 10px 10px;
+}
+section.contact-us .info{
+    h4,p{
+        color: white;
+        line-height: 1.5;
+        font-weight: 800;
+    }
+    h4{
+        text-transform: uppercase;
+        font-size: 14px;
 
+    }
+}
 section.contact-us ul.social-icons li a:hover {
   background-color: #18853E;
   color: #fff;
@@ -1245,7 +1252,7 @@ section.contact-us ul.social-icons li a:hover {
 p.copyright {
   text-align: center;
   color: #fff;
-  margin: 40px 0px;
+  margin: 15px 0px;
   margin-bottom: 0px;
 }
 
