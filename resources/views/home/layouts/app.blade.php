@@ -107,7 +107,7 @@
                 <p>@lang('Address'): <span data-cms="{{app()->getLocale()}}-address">Cụm công nghiệp Minh lãng, xã Minh Lãng, huyện Vũ Thư, tỉnh Thái Bình.</span></p>
                 <p>@lang('Phone'): <span data-cms="{{app()->getLocale()}}-phone">0989.490.820</span></p>
                 <p>@lang('Email'): <span data-cms="{{app()->getLocale()}}-email">duocphamttbgroup@gmail.com</span></p>
-                <p>Giấy chứng nhận ĐKKD số 0102190173 do Sở Kế hoạch và Đầu tư TP.HN cấp ngày 20/03/2007</p>
+                <p data-cms="{{app()->getLocale()}}-policy">Giấy chứng nhận ĐKKD số 0102190173 do Sở Kế hoạch và Đầu tư TP.HN cấp ngày 20/03/2007</p>
             </div>
         </div>
         <div class="column col-lg-3 list">
