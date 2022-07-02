@@ -1998,6 +1998,8 @@ body {
 .news-content {
     background: #F0F1F5;
     margin-top: 0px;
+    margin-bottom: -180px;
+    min-height: 100vh;
     .content{
         line-height: 27px;
     }
