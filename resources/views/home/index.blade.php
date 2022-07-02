@@ -13,7 +13,7 @@
 <section class="main-banner" id="top">
   <div class="container-fluid">
     <div class="row">
-        <div class="owl-service-item owl-carousel slides" style="padding: 0px !important">
+        <div class=" owl-carousel slides" style="padding: 0px !important">
             @foreach ($slides as $slide)
                 <div class="item" style="width: 100%">
                     <img src="{{$slide->image}}" alt="">
