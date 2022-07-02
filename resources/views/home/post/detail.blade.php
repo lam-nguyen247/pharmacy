@@ -7,6 +7,13 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 news-header">
+                <h4 style="text-align: center; width: 100%" >  {{$post->category[0]?$post->category[0]->name:''}} </h4>
+            </div>
+
+            <div class="col-lg-8">
+
+            </div>
+            <div class="col-lg-4">
 
             </div>
         </div>
