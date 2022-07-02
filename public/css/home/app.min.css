@@ -2445,22 +2445,6 @@ body {
   text-align: center;
 }
 
-.right-content {
-  padding: 30px;
-  background: white;
-  margin-right: 20px;
-}
-
-.right-content h1 {
-  font-size: 24px;
-  padding-bottom: 20px;
-}
-
-.right-content .time {
-  margin-bottom: 15px;
-  position: relative;
-}
-
 .left-category {
   padding-top: 30px;
   background: white;
@@ -2499,6 +2483,23 @@ body {
 
 .news-content .content {
   line-height: 27px;
+}
+
+.news-content .right-content {
+  padding: 30px;
+  background: white;
+  margin-right: 20px;
+  min-height: 100vh;
+}
+
+.news-content .right-content h1 {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.news-content .right-content .time {
+  margin-bottom: 15px;
+  position: relative;
 }
 
 .time::before {
