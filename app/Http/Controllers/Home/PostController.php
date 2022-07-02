@@ -10,12 +10,10 @@ use App\Services\PostService;
 class PostController extends Controller
 {
     private $postService;
-    private $imageService;
 
-    public function __construct(PostService $postService, ImageService $imageService)
+    public function __construct(PostService $postService)
     {
         $this->postService = $postService;
-        $this->imageService = $imageService;
     }
 
     public function index()

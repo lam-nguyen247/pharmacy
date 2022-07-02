@@ -1958,3 +1958,57 @@ body {
     flex-wrap: wrap;
     text-align: center;
 }
+.right-content{
+    padding-top: 30px;
+    background: white;
+    margin-right: 20px;
+    h1{
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    .time{
+        margin-bottom: 15px;
+        position: relative;
+    }
+}
+.left-category{
+    padding-top: 30px;
+    background: white;
+    .row{
+        padding: 10px 0px;
+        border-bottom: 1px dashed #F0F1F5;
+    }
+    h4{
+        position: relative;
+        margin-bottom: 20px;
+    }
+    a{
+        color:black
+    }
+    h4::before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 40px;
+        background-color: #18853E;
+        bottom: 0;
+        left: 0;
+    }
+}
+.news-content {
+    background: #F0F1F5;
+    margin-top: 0px;
+    .content{
+        line-height: 27px;
+    }
+}
+.time::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 20px;
+    background-color: #18853E;
+    bottom: 0;
+    left: 0;
+}
+
