@@ -8,7 +8,7 @@
           </div>
         </div>
         <div class="col-lg-12">
-          <div class="owl-service-item owl-carousel ">
+          <div class="owl-service-item owl-carousel">
               @foreach ($products as $product)
                   <div class="item">
                       <div class="service-item">
