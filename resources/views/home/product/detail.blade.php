@@ -66,6 +66,7 @@
                     </div>
                     <div class="col-6">
                         <a href="{{$item->href}}"> <h6 class="mb-0">{{$item->name}}</h6> </a>
+                        <p>{{$item->excerpt}}</p>
                     </div>
                   </div>
                 @endforeach
