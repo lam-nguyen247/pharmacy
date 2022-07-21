@@ -7,7 +7,7 @@
           </div>
         </div>
         <div class="col-lg-12">
-          <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
+          <div class="owl-testimonials owl-carousel " style="position: relative; z-index: 5;">
             @foreach ($posts as $post)
             <div class="item">
               <div>
