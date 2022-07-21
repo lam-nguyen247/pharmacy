@@ -137,8 +137,8 @@
 <script>
     $(document).ready(function(){
         $([document.documentElement, document.body]).animate({
-            scrollTop: $("#contact-section").offset().top
-        }, 2000);
+            scrollTop: $("#contact-section").offset().top - 100
+        }, 1000);
     })
 </script>
 @endsection
