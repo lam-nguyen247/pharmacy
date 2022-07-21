@@ -30,8 +30,8 @@
                             <tbody>
                             @forelse($customerList as $customer)
                                 <tr>
-                                    {{-- <td>{{$customer->id}}</td>
-                                    <td>{{$customer->domain}}</td>
+                                    <td>{{$customer->id}}</td>
+                                    {{-- <td>{{$customer->domain}}</td>
                                     <td>{{$customer->theme}}</td>
                                     <td>{{$customer->language}}</td>
                                     <td>{{$customer->company}}</td> --}}
