@@ -145,6 +145,14 @@
             scrollTop: $("#contact-section").offset().top - 100
         }, 1000);
     })
+    let Language = (function() {
+        return {
+            send: `@lang('Send')`,
+            sending: `@lang('Sending')`,
+            sentSuccessfully: `@lang('Sent successfully')`,
+            sentFailed: `@lang('Sent failed')`,
+        };
+    })();
 </script>
 @endsection
 

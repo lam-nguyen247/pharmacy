@@ -103,7 +103,7 @@
         </div>
         <div class="column col-lg-3">
             <div class="info">
-                <h4>Công Ty Dược Phẩm Quốc Tế <br/> TTB Group</h4>
+                <h4 data-cms="{{app()->getLocale()}}-company">Công Ty Dược Phẩm Quốc Tế TTB Group</h4>
                 <p>@lang('Address'): <span data-cms="{{app()->getLocale()}}-address">Cụm công nghiệp Minh lãng, xã Minh Lãng, huyện Vũ Thư, tỉnh Thái Bình.</span></p>
                 <p>@lang('Phone'): <span data-cms="{{app()->getLocale()}}-phone">0989.490.820</span></p>
                 <p>@lang('Email'): <span data-cms="{{app()->getLocale()}}-email">duocphamttbgroup@gmail.com</span></p>
