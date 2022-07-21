@@ -11,7 +11,7 @@
             @foreach ($posts as $post)
             <div class="item">
               <div>
-                <a href="{{$post->href}}">
+                <a style="color: #111" href="{{$post->href}}">
                   <img src="{{$post->image}}"/>
                 </a>
               </div>
