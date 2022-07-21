@@ -2366,11 +2366,20 @@ body {
 @media (max-width: 767px) {
   section.simple-cta h4 {
     font-size: 24px !important;
+    line-height: 34px;
   }
 
   .section-heading {
     margin-bottom: 20px !important;
     padding-top: 0px !important;
+  }
+
+  #services {
+    padding-bottom: 20px;
+  }
+
+  #testimonials {
+    margin-top: 30px;
   }
 
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
