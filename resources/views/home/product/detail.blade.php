@@ -60,15 +60,17 @@
             <div class="col-lg-4 left-category">
                 <h4>@lang('Related Products')</h4>
                 @foreach ($products as $item)
-                <div class="row">
-                    <div class="col-4">
-                       <a href="{{$item->href}}"> <img src="{{$item->image}}"/> </a>
+                @if ($item->id != $product->id)
+                    <div class="row">
+                        <div class="col-4">
+                        <a href="{{$item->href}}"> <img src="{{$item->image}}"/> </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="{{$item->href}}"> <h6 class="mb-0">{{$item->name}}</h6> </a>
+                            <p>{{$item->excerpt}}</p>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <a href="{{$item->href}}"> <h6 class="mb-0">{{$item->name}}</h6> </a>
-                        <p>{{$item->excerpt}}</p>
-                    </div>
-                  </div>
+                @endif
                 @endforeach
             </div>
 

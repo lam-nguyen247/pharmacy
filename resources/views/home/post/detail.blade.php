@@ -30,14 +30,16 @@
             <div class="col-lg-3 left-category">
                 <h4>Bài viết khác</h4>
                 @foreach ($posts as $item)
-                <div class="row">
-                    <div class="col-4">
-                       <a href="{{$item->href}}"> <img src="{{$item->image}}"/> </a>
+                    @if ($item->id != $post->id)
+                    <div class="row">
+                        <div class="col-4">
+                        <a href="{{$item->href}}"> <img src="{{$item->image}}"/> </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="{{$item->href}}"> <h6 class="mb-0">{{$item->name}}</h6> </a>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <a href="{{$item->href}}"> <h6 class="mb-0">{{$item->name}}</h6> </a>
-                    </div>
-                  </div>
+                    @endif
                 @endforeach
             </div>
 
