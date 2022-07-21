@@ -193,15 +193,13 @@
 <script>
 
 $(document).ready(function() {
-
  $(".slides").owlCarousel({
-
-     autoPlay: 3000,
+     autoPlay: 2000,
      items : 1,
-
      center: true,
      nav:true,
-     loop:true
+     loop:true,
+     navigation: false
  });
 
 });
