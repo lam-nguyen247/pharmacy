@@ -193,14 +193,29 @@
 <script>
 
 $(document).ready(function() {
-    alert(111);
  $(".slides").owlCarousel({
-     autoPlay: 2000,
-     items : 1,
-     center: true,
-     nav:true,
-     loop:true,
-     navigation: false
+     //Basic Speeds
+     slideSpeed : 200,
+    paginationSpeed : 800,
+
+    //Autoplay
+    autoPlay : false,
+    goToFirst : true,
+    goToFirstSpeed : 1000,
+
+    // Navigation
+    navigation : false,
+    navigationText : ["prev","next"],
+    pagination : true,
+    paginationNumbers: true,
+
+    // Responsive
+    responsive: true,
+    items : 5,
+    itemsDesktop : [1199,4],
+    itemsDesktopSmall : [980,3],
+    itemsTablet: [768,2],
+    itemsMobile : [479,1]
  });
 
 });
