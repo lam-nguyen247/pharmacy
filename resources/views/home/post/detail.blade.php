@@ -27,7 +27,7 @@
                     {!!$post->content!!}
                 </div>
             </div>
-            <div class="col-lg-4 left-category">
+            <div class="col-lg-3 left-category">
                 <h4>Bài viết khác</h4>
                 @foreach ($posts as $item)
                 <div class="row">
