@@ -193,6 +193,7 @@
 <script>
 
 $(document).ready(function() {
+    alert(111);
  $(".slides").owlCarousel({
      autoPlay: 2000,
      items : 1,
