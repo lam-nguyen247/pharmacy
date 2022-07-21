@@ -1889,6 +1889,9 @@ body {
 }
 
 @media (max-width: 767px) {
+    section.simple-cta h4{
+        font-size:32px !important;
+    }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     display: none;
   }

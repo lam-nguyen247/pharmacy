@@ -55,7 +55,7 @@
           <h4  data-cms="{{app()->getLocale()}}-home-11">5 LÝ DO BẠN NÊN CHỌN GIA CÔNG MỸ PHẨM TRỌN GÓI </h4>
         </div>
       </div>
-      <div class="col-lg-12">
+      <div class="col-lg-12" style="padding-bottom: 10px">
         <div class="naccs">
           <div class="tabs">
             <div class="row">
