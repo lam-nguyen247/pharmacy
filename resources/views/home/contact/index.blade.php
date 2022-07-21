@@ -133,3 +133,13 @@
 
 @endsection
 
+@section('js')
+<script>
+    $(document).ready(function(){
+        setTimeout(() => {
+            $("body").scrollTop(300);
+        }, 400);
+    })
+</script>
+@endsection
+
