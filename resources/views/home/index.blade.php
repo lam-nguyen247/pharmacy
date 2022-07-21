@@ -215,7 +215,7 @@ $(document).ready(function() {
  });
  setInterval(() => {
     $(".owl-next").click();
- }, 2000);
+ }, 2500);
 });
     let Language = (function() {
         return {
