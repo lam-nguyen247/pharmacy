@@ -136,9 +136,9 @@
 @section('js')
 <script>
     $(document).ready(function(){
-        setTimeout(() => {
-            $("body").scrollTop(300);
-        }, 400);
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#contact-section").offset().top
+        }, 2000);
     })
 </script>
 @endsection
