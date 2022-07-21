@@ -217,7 +217,7 @@ $(document).ready(function() {
     itemsTablet: [768,2],
     itemsMobile : [479,1]
  });
- setTimeout(() => {
+ setInterval(() => {
     $(".owl-next").click();
  }, 2000);
 });
