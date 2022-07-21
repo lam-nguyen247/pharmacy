@@ -31,12 +31,15 @@ class ProductController extends Controller
 
     public function detail($news, Product $product)
     {
-        $path = 'product';
+
+        // dd(request()->segment(1));
+        $path = 'products';
+        // dd(trans($path));
         if (request()->segment(1) != trans($path)) {
-            return redirect(trans($path));
+            return redirect(    ($path));
         }
         $seo = $product->seo;
         $products = $this->productService->getProductList()->limit(5)->get();
-        return view('home.product.detail', compact('menuList', 'product', 'seo', 'products'));
+        return view('home.product.detail', compact('product', 'seo', 'products'));
     }
 }

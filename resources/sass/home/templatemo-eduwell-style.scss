@@ -1098,7 +1098,7 @@ contact us
 */
 
 section.contact-us {
-    background: linear-gradient(-145deg, rgba(24,133,62,1)0%, rgba(162,247,159,1)100%) !important;
+    background: linear-gradient(-145deg, rgba(24,133,62,1)0%, rgba(162,247,159,1)100%);
     padding: 0px;
     position: relative;
 }
@@ -2003,7 +2003,7 @@ body {
     }
 }
 .news-content {
-    background: #F0F1F5;
+    background: #F0F1F5 !important;
     margin-top: 0px;
     margin-bottom: -180px;
     min-height: 100vh;
@@ -2025,6 +2025,33 @@ body {
         }
     }
 }
+
+.product-content {
+    background: #F0F1F5 !important;
+    margin-bottom: -180px;
+    min-height: 100vh;
+    margin-top: 80px;
+    padding-top: 40px !important;
+    .content{
+        line-height: 27px;
+    }
+    .right-content{
+        padding: 30px;
+        background: white;
+        margin-right: 20px;
+        min-height: 100vh;
+        h1{
+            font-size: 24px;
+            padding-bottom: 20px;
+        }
+        .time{
+            margin-bottom: 15px;
+            position: relative;
+        }
+    }
+}
+
+
 .time::before {
     content: "";
     position: absolute;
