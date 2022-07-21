@@ -18,9 +18,9 @@
                                     <div class="col-sm-7">
                                         <div class="row">
                                             <div class="col-12">{{$slide->name}}</div>
-                                            <div class="col-12">@lang('Time'):
+                                            {{-- <div class="col-12">@lang('Time'):
                                                 <code>{{$slide->time}} @lang('second')</code>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                     <div class="col-sm-2 d-flex flex-column justify-content-center align-items-center">
