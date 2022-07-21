@@ -217,14 +217,14 @@ $(document).ready(function() {
     $(".slides .owl-next").click();
  }, 2500);
 });
-    let Language = (function() {
-        return {
-            send: `@lang('Send')`,
-            sending: `@lang('Sending')`,
-            sentSuccessfully: `@lang('Sent successfully')`,
-            sentFailed: `@lang('Sent failed')`,
-        };
-    })();
+let Language = (function() {
+    return {
+        send: `@lang('Send')`,
+        sending: `@lang('Sending')`,
+        sentSuccessfully: `@lang('Sent successfully')`,
+        sentFailed: `@lang('Sent failed')`,
+    };
+})();
 </script>
 <script src="/js/home/cms.min.js"></script>
 @endsection
