@@ -214,7 +214,7 @@ $(document).ready(function() {
     items : 1,
  });
  setInterval(() => {
-    $(".owl-next").click();
+    $(".slides .owl-next").click();
  }, 2500);
 });
     let Language = (function() {
