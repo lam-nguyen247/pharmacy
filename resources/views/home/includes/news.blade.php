@@ -11,13 +11,13 @@
             @foreach ($posts as $post)
             <div class="item">
               <div>
-                <a style="color: #111" href="{{$post->href}}">
+                <a href="{{$post->href}}">
                   <img src="{{$post->image}}"/>
                 </a>
               </div>
               <p>“{{$post->excerpt}}”</p>
-                <a href="{{$post->href}}">
-                    <h4>{{$post->name}}</h4>
+                <a  style="color: #111" href="{{$post->href}}">
+                    <h4 style="color: #111" >{{$post->name}}</h4>
                 </a>
                 <span>{{isset($post->category[0])?$post->category[0]->name:''}}</span>
             </div>
