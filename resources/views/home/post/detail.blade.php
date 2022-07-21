@@ -21,7 +21,7 @@
                     <div class="tacgia">
                     </div>
                     <style>.tacgia p{font-size: 14px !important;line-height: 1em !important;margin-bottom: .5em;}.tacgia a{color: #004C99;}section.news-detail .news-detail-content .information .tittle .time{margin-bottom: 1em;}</style>
-                    <div class="time">01/06/22</div>
+                    <div class="time">{{$post->created_at}}</div>
                  </div>
                 <div class="content">
                     {!!$post->content!!}
