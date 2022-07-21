@@ -15,7 +15,7 @@
 <section class="section news-content">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7  right-content">
+            <div class="col-lg-8  right-content">
                 <div class="tittle clearfix">
                     <h1>{{$post->name}}</h1>
                     <div class="tacgia">
