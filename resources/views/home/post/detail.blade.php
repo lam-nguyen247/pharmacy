@@ -21,7 +21,7 @@
                     <div class="tacgia">
                     </div>
                     <style>.tacgia p{font-size: 14px !important;line-height: 1em !important;margin-bottom: .5em;}.tacgia a{color: #004C99;}section.news-detail .news-detail-content .information .tittle .time{margin-bottom: 1em;}</style>
-                    <div class="time">{{date_format($post->created_at, 'd/M/Y H:i')}}</div>
+                    <div class="time">{{date_format($post->created_at, 'd-M-Y H:i')}}</div>
                  </div>
                 <div class="content">
                     {!!$post->content!!}

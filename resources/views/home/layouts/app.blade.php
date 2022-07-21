@@ -157,7 +157,7 @@
            </div>
         </div>
         <div class="col-lg-12">
-          <p class="copyright">Copyright © 2022 TTP GROUP Co., Ltd. All Rights Reserved.
+          <p class="copyright">Copyright © 2022 TTB GROUP Co., Ltd. All Rights Reserved.
         </div>
       </div>
     </div>

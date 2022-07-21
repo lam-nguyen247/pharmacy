@@ -36,7 +36,6 @@ class ProductController extends Controller
             return redirect(trans($path));
         }
         $seo = $product->seo;
-        $menuList = $this->imageService->getMenuList($product->content);
         $products = $this->productService->getProductList()->limit(5)->get();
         return view('home.product.detail', compact('menuList', 'product', 'seo', 'products'));
     }
