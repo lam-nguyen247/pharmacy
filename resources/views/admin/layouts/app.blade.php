@@ -139,7 +139,7 @@
                         @if(Route::has('customer.index'))
                         <li class="sidebar-item">
                             <a class="sidebar-link waves-effect waves-dark" href="{{route('customer.index')}}" aria-expanded="false">
-                                <i class="ti-receipt"></i><span class="hide-menu">@lang('Customer')</span>
+                                <i class="ti-receipt"></i><span class="hide-menu">@lang('Contact')</span>
                             </a>
                         </li>
                         @endif
