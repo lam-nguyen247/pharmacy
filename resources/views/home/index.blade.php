@@ -195,7 +195,7 @@
 $(document).ready(function() {
  $(".slides").owlCarousel({
      //Basic Speeds
-    slideSpeed : 200,
+    slideSpeed : 800,
     paginationSpeed : 800,
     loop: true,
 
