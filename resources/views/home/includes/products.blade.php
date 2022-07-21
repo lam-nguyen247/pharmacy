@@ -13,9 +13,13 @@
                   <div class="item">
                       <div class="service-item">
                       <div class="icon">
-                          <img src="{{$product->image}}" alt="">
+                            <a href="{{$product->href}}">
+                                <img src="{{$product->image}}" alt="{{$product->name}}">
+                            </a>
                       </div>
-                      <h4>{{$product->name}}</h4>
+                      <a style="color: #111" href="{{$product->href}}">
+                         <h4 style="color: #111">{{$product->name}}</h4>
+                      </a>
                       {!!$product->excerpt!!}
                       </div>
                 </div>
