@@ -195,7 +195,7 @@
 $(document).ready(function() {
  $(".slides").owlCarousel({
      //Basic Speeds
-     slideSpeed : 200,
+    slideSpeed : 200,
     paginationSpeed : 800,
 
     //Autoplay
@@ -217,7 +217,9 @@ $(document).ready(function() {
     itemsTablet: [768,2],
     itemsMobile : [479,1]
  });
-
+ setTimeout(() => {
+    $(".owl-next").click();
+ }, 2000);
 });
     let Language = (function() {
         return {
