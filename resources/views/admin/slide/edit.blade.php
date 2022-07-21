@@ -24,15 +24,15 @@
                                 <div class="col-sm-5 col-lg-2">
                                     <x-input name="order" value="{{$slide->order}}" type="number" label="Order" class="mb-4" input-class="form-control-sm" />
                                 </div>
-                                <div class="col-sm-7 col-lg-3">
+                                {{-- <div class="col-sm-7 col-lg-3">
                                     <x-input name="time" value="{{$slide->time}}" type="number" label="Time" class="mb-4" input-class="form-control-sm" />
-                                </div>
+                                </div> --}}
                             </div>
-                            <div class="row">
+                            {{-- <div class="row">
                                 <div class="col-12">
                                     <x-input name="url" value="{{$slide->url}}" label="Link" class="mb-4" input-class="form-control-sm" />
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="row">
                                 <div class="col-lg-10">
                                     <x-textarea name="content" value="{{$slide->content}}" label="Content" class="" input-class="form-control-sm" />
