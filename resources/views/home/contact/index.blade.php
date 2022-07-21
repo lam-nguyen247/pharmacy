@@ -62,6 +62,11 @@
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
+                    <fieldset>
+                      <input type="text" name="phone" id="phone" placeholder="@lang('Your Phone')" required="">
+                    </fieldset>
+                  </div>
+                <div class="col-lg-12">
                   <fieldset>
                     <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="@lang('Your Email')" required="">
                   </fieldset>
