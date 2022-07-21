@@ -2364,6 +2364,7 @@ body {
 }
 
 @media (max-width: 767px) {
+  .section-heading h4,
   section.simple-cta h4 {
     font-size: 24px !important;
     line-height: 34px;
