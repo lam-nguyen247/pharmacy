@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="col-lg-12">
-        <iframe width="100%" style="height: 75vh" src="https://www.youtube.com/embed/SXGDPyqGPRo?autoplay=0&showinfo=0&controls=0&modestbranding=0" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+        <iframe width="100%" style="height: 75vh" src="{{$config->youtube}}" title="YouTube video player" frameborder="0" allow="autoplay" allowfullscreen></iframe>
       </div>
 
     </div>
