@@ -162,6 +162,55 @@
       </div>
     </div>
 </section>
+<div class="box-contact">
+    <div class="hotline-phone">
+      <div class="ring">
+        <div class="ring-circle"></div>
+        <div class="ring-circle-fill"></div>
+        <div class="ring-img-circle">
+          <a href="tel:+{{$config->phone}}" class="btn-img">
+            <img src="/images/telephone.png" width="50">
+          </a>
+        </div>
+      </div>
+      <div class="bar">
+        <a href="tel:+{{$config->phone}}">
+          <span class="text-hotline">0931932457</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="messenger">
+      <div class="ring">
+            <div class="">
+          <a href="https://m.me/ttbgroup.vn" class="btn-img" target="_blank">
+            <img src="/images/icon-mess.png" width="50">
+          </a>
+        </div>
+      </div>
+      <div class="bar">
+        <a href="https://m.me/ttbgroup.vn" target="_blank">
+          <span class="text-hotline">Facebook</span>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="zalo">
+        <div class="ring">
+                <div class="">
+            <a href="https://zalo.me/{{$config->phone}}" class="btn-img" target="_blank">
+                <img src="/images/zalo.png" width="50">
+            </a>
+            </div>
+        </div>
+        <div class="bar">
+            <a href="https://zalo.me/{{$config->phone}}" target="_blank">
+            <span class="text-hotline">Zalo</span>
+            </a>
+        </div>
+        </div>
+    </div>
 
 <script src="/js/home/jquery-3.6.0.min.js"></script>
 <script src="/js/home/util.min.js"></script>
