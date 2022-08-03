@@ -130,7 +130,7 @@
                 margin: 0px;
                 background: none;
             ">
-                            <input type="email" class="email" placeholder="@lang('E-Mail Address')" style="
+                            <input type="email" name="email" class="email" placeholder="@lang('E-Mail Address')" style="
                 width: 57%;
                 margin: 0px;
                 border-radius: 5px 0px 0px 5px;
