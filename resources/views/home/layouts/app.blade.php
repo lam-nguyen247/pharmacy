@@ -175,7 +175,7 @@
       </div>
       <div class="bar">
         <a href="tel:+{{$config->phone}}">
-          <span class="text-hotline">0931932457</span>
+          <span class="text-hotline">{{$config->phone}}</span>
         </a>
       </div>
     </div>
