@@ -27,12 +27,28 @@ class PostService
 
     public function getPostList()
     {
-        return Post::where('language', app()->getLocale())->latest();
+        return Post::where('language', app()->getLocale())->whereHas('category', function($qu){
+            $qu->where('categoryables.category_id', 1);
+        })->latest();
     }
 
     public function getCategoryList()
     {
         return MasterCategory::whereName('posts')->first()->categoryList;
+    }
+
+    public function getRecruitList()
+    {
+        return Post::where('language', app()->getLocale())->whereHas('category', function($qu){
+            $qu->where('categoryables.category_id', 2);
+        })->latest();
+    }
+
+    public function getActivateList()
+    {
+        return Post::where('language', app()->getLocale())->whereHas('category', function($qu){
+            $qu->where('categoryables.category_id', 3);
+        })->latest();
     }
 
     /**

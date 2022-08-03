@@ -44,7 +44,7 @@ class PostController extends Controller
             return redirect(trans($path));
         }
 
-        $posts = $this->postService->getPostList()->simplePaginate(12);
+        $posts = $this->postService->getActivateList()->simplePaginate(12);
         return view('home.post.activate', compact('posts'));
     }
 
@@ -54,7 +54,7 @@ class PostController extends Controller
             return redirect(trans($path));
         }
 
-        $posts = $this->postService->getPostList()->simplePaginate(12);
+        $posts = $this->postService->getRecruitList()->simplePaginate(12);
         return view('home.post.recruit', compact('posts'));
     }
 }
