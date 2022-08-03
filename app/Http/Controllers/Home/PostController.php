@@ -34,7 +34,7 @@ class PostController extends Controller
             return redirect(trans($path));
         }
         $seo = $post->seo;
-        $posts = $this->postService->getPostList($post->category[0]->category_id)->limit(5)->get();
+        $posts = $this->postService->getPostList($post->category[0]->id)->limit(5)->get();
         return view('home.post.detail', compact('post', 'seo', 'posts'));
     }
 
