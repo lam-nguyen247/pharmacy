@@ -25,10 +25,12 @@ class PostService
         $this->seoService = $seoService;
     }
 
-    public function getPostList($categoryId = 1)
+    public function getPostList($categoryId)
     {
         return Post::where('language', app()->getLocale())->whereHas('category', function($qu) use ($categoryId){
-            $qu->where('categoryables.category_id', $categoryId);
+            if($categoryId){
+                $qu->where('categoryables.category_id', $categoryId);
+            }
         })->latest();
     }
 
