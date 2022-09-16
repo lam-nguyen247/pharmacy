@@ -23,7 +23,7 @@ class PostController extends Controller
             return redirect(trans($path));
         }
 
-        $posts = $this->postService->getPostList()->simplePaginate(12);
+        $posts = $this->postService->getPostList(1)->simplePaginate(12);
         return view('home.post.index', compact('posts'));
     }
 
