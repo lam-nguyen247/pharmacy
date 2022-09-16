@@ -40,14 +40,14 @@ class PostService
     public function getRecruitList()
     {
         return Post::where('language', app()->getLocale())->whereHas('category', function($qu){
-            $qu->where('categoryables.category_id', 2);
+            $qu->where('categoryables.category_id', 5);
         })->latest();
     }
 
     public function getActivateList()
     {
         return Post::where('language', app()->getLocale())->whereHas('category', function($qu){
-            $qu->where('categoryables.category_id', 5);
+            $qu->where('categoryables.category_id', 3);
         })->latest();
     }
 
