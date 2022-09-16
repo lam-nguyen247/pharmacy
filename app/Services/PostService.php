@@ -47,7 +47,7 @@ class PostService
     public function getActivateList()
     {
         return Post::where('language', app()->getLocale())->whereHas('category', function($qu){
-            $qu->where('categoryables.category_id', 3);
+            $qu->where('categoryables.category_id', 5);
         })->latest();
     }
 
