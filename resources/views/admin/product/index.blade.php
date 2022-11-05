@@ -23,13 +23,15 @@
                             </thead>
                             <tbody>
                             @forelse($productList as $product)
+                                @if ($product->category->first() != null)
                                 <tr>
                                     <td>{{$product->id}}</td>
                                     <td><img @src="{{$product->image}}" width="80" /></td>
-                                    @if(Route::has('category.index'))<td>{{$product->category?->first()?->name}}</td>@endif
+                                    @if(Route::has('category.index'))<td>{{$product->category->first()->name}}</td>@endif
                                     <td>{{$product->name}}</td>
                                     <td><x-action route="product" id="{{$product->id}}" /></td>
                                 </tr>
+                                @endif
                             @empty
                             @endforelse
                             </tbody>
