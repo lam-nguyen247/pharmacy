@@ -60,7 +60,7 @@
             <div class="col-lg-4 left-category">
                 <h4>@lang('Related Products')</h4>
                 @foreach ($products as $item)
-                @if ($item->id != $product->id)
+                @if ($item->id != $product->id && $item->image)
                     <div class="row">
                         <div class="col-4">
                         <a href="{{$item->href}}"> <img src="{{$item->image}}"/> </a>

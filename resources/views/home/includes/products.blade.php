@@ -10,19 +10,21 @@
         <div class="col-lg-12">
           <div class="owl-service-item owl-carousel">
               @foreach ($products as $product)
-                  <div class="item">
-                      <div class="service-item">
-                      <div class="icon">
+                @if ($product->image)
+                    <div class="item">
+                        <div class="service-item">
+                        <div class="icon">
                             <a href="{{$product->href}}">
                                 <img src="{{$product->image}}" alt="{{$product->name}}">
                             </a>
-                      </div>
-                      <a style="color: #111" href="{{$product->href}}">
-                         <h4 style="color: #111">{{$product->name}}</h4>
-                      </a>
-                      {!!$product->excerpt!!}
-                      </div>
+                        </div>
+                        <a style="color: #111" href="{{$product->href}}">
+                        <h4 style="color: #111">{{$product->name}}</h4>
+                        </a>
+                        {!!$product->excerpt!!}
+                        </div>
                 </div>
+                @endif
               @endforeach
           </div>
         </div>
