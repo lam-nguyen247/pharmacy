@@ -5,7 +5,7 @@
 @section('content')
 <section class="section contact-us product-content section">
     <div class="container">
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-md-center mb-5">
             <div class="col-lg-7" style="margin-right: 20px; padding: 0px;">
                 <div class="container-fluid" style="padding: 0px;">
                     <div class="row" style="padding:0px">
