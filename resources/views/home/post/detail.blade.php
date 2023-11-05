@@ -3,11 +3,18 @@
 @section('title', $post->name)
 @section('cover', url($post->image))
 @section('content')
+@section('css')
+    <style>
+        #description p {
+            margin-bottom: 10px !important;
+        }
+    </style>
+@endsection
 <section class="section">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 news-header">
-                <h4 style="text-align: center; width: 100%" >  {{$post->category[0]->name}} </h4>
+                <h4 style="text-align: center; width: 100%"> {{ $post->category[0]->name }} </h4>
             </div>
         </div>
     </div>
@@ -17,28 +24,44 @@
         <div class="row">
             <div class="col-lg-8  right-content">
                 <div class="tittle clearfix">
-                    <h1>{{$post->name}}</h1>
+                    <h1>{{ $post->name }}</h1>
                     <div class="tacgia">
                     </div>
-                    <style>.tacgia p{font-size: 14px !important;line-height: 1em !important;margin-bottom: .5em;}.tacgia a{color: #004C99;}section.news-detail .news-detail-content .information .tittle .time{margin-bottom: 1em;}</style>
-                    <div class="time">{{date_format($post->created_at, 'd-M-Y H:i')}}</div>
-                 </div>
-                <div class="content">
-                    {!!$post->content!!}
+                    <style>
+                        .tacgia p {
+                            font-size: 14px !important;
+                            line-height: 1em !important;
+                            margin-bottom: .5em;
+                        }
+
+                        .tacgia a {
+                            color: #004C99;
+                        }
+
+                        section.news-detail .news-detail-content .information .tittle .time {
+                            margin-bottom: 1em;
+                        }
+                    </style>
+                    <div class="time">{{ date_format($post->created_at, 'd-M-Y H:i') }}</div>
+                </div>
+                <div class="content" id="description">
+                    {!! $post->content !!}
                 </div>
             </div>
             <div class="col-lg-3 left-category">
                 <h4>Bài viết khác</h4>
                 @foreach ($posts as $item)
                     @if ($item->id != $post->id)
-                    <div class="row">
-                        <div class="col-4">
-                        <a href="{{$item->href}}"> <img src="{{$item->image}}"/> </a>
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="{{ $item->href }}"> <img src="{{ $item->image }}" /> </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="{{ $item->href }}">
+                                    <h6 class="mb-0">{{ $item->name }}</h6>
+                                </a>
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <a href="{{$item->href}}"> <h6 class="mb-0">{{$item->name}}</h6> </a>
-                        </div>
-                    </div>
                     @endif
                 @endforeach
             </div>
