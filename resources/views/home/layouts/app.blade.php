@@ -116,7 +116,7 @@
                             <p>@lang('Email'): <span
                                     data-cms="{{ app()->getLocale() }}-email">duocphamttbgroup@gmail.com</span></p>
                             <p data-cms="{{ app()->getLocale() }}-policy">Giấy chứng nhận ĐKKD số 1001232559 do Sở Kế
-                                hoạch và Đầu tư Thái Bình cấp ngày 03/08/2022</p>
+                                hoạch và Đầu tư Thái Bình cấp ngày 03/08/2021</p>
                         </div>
                     </div>
                     <div class="column col-lg-3 list">
