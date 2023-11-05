@@ -126,9 +126,6 @@
                         <a href="@lang('products')"> @lang('Products') </a>
                         <a href="#"> Chính sách bảo mật thông tin </a>
                         <a href="#"> Chính sách biên tập </a>
-                        {{-- <a href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=8952">
-                <img src="https://tambinh.vn/wp-content/themes/tam-binh/assets/images/home/icon1.png" data-src="https://tambinh.vn/wp-content/themes/tam-binh/assets/images/home/icon1.png" class="lazy-loaded">
-            </a> --}}
                     </div>
                     <div class="column col-lg-3">
                         <div class="info">
