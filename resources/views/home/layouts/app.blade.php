@@ -115,8 +115,8 @@
                             <p>@lang('Phone'): <span data-cms="{{ app()->getLocale() }}-phone">0989.490.820</span></p>
                             <p>@lang('Email'): <span
                                     data-cms="{{ app()->getLocale() }}-email">duocphamttbgroup@gmail.com</span></p>
-                            <p data-cms="{{ app()->getLocale() }}-policy">Giấy chứng nhận ĐKKD số 0102190173 do Sở Kế
-                                hoạch và Đầu tư TP.HN cấp ngày 20/03/2007</p>
+                            <p data-cms="{{ app()->getLocale() }}-policy">Giấy chứng nhận ĐKKD số 1001232559 do Sở Kế
+                                hoạch và Đầu tư TP.HN cấp ngày 19/01/2022</p>
                         </div>
                     </div>
                     <div class="column col-lg-3 list">
