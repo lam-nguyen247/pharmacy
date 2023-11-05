@@ -153,7 +153,7 @@
                 padding: 10px 30px;
                 border: 1px solid  #18853E;
                 border-left: none;
-                padding-bottom: 9px
+                padding-bottom: 12px
             ">@lang('Send')</button>
                             </form>
                             <ul class="social-icons">
